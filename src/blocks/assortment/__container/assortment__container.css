@@ -1,0 +1,7 @@
+.assortment__container {
+  display: grid;
+  grid-template-columns: 40% 1fr 40%;
+  grid-template-rows: 128px 1fr 1fr;
+  align-items: end;
+  gap: 32px;
+}

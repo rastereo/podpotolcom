@@ -1,0 +1,7 @@
+.achievement_numbers {
+  max-width: 950px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 24px 0 108px;
+}

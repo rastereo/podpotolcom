@@ -1,0 +1,11 @@
+.request__input {
+  border: 1px solid var(--input-border-color);
+  margin-bottom: 24px;
+  padding: 20px 250px;
+}
+
+.request__input::placeholder {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+}

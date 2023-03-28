@@ -1,0 +1,5 @@
+.footer__contact {
+  width: 528px;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,11 @@
+.assortment__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 0;
+
+  grid-column-start: 2;
+  grid-column-end: -1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}

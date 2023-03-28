@@ -1,0 +1,8 @@
+.achievement__number {
+  font-weight: 500;
+  font-size: 128px;
+  line-height: 1.21;
+  color: var(--number-text-color);
+  text-align: center;
+  margin: 0;
+}

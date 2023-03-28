@@ -1,0 +1,6 @@
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+}

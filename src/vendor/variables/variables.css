@@ -1,0 +1,10 @@
+:root {
+  --root-background-color: #f9f9f9;
+  --text-color: #000;
+  --header-border-color: #000;
+  --button-text-color: #fff;
+  --button-background-color: #0007b4;
+  --number-text-color: #0007b4;
+  --input-border-color: #000;
+  --footer-border-color: #000;
+}

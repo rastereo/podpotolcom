@@ -1,0 +1,87 @@
+/** Fonts **/
+@import url(../vendor/fonts/fonts.css);
+
+/** Normalize **/
+@import url(../vendor/normalize.css);
+
+/** Variables **/
+@import url(../vendor/variables/variables.css);
+
+/** Root **/
+@import url(../blocks/root/root.css);
+
+/** Link **/
+@import url(../blocks/link/link.css);
+
+/** List **/
+@import url(../blocks/list/list.css);
+
+/** Header **/
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/_border/header_border_none.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__menu/header__menu.css);
+
+/** Title **/
+@import url(../blocks/title/title.css);
+@import url(../blocks/title/_size/title_size_large.css);
+@import url(../blocks/title/_size/title_size_medium.css);
+@import url(../blocks/title/_size/title_size_small.css);
+
+/** Button-contact **/
+@import url(../blocks/button-contact/button-contact.css);
+
+/** Presentation **/
+@import url(../blocks/presentation/presentation.css);
+@import url(../blocks/presentation/__description/presentation__description.css);
+@import url(../blocks/presentation/__image/presentation__image.css);
+
+/** Assortment **/
+@import url(../blocks/assortment/assortment.css);
+@import url(../blocks/assortment/__container/assortment__container.css);
+@import url(../blocks/assortment/__text/assortment__text.css);
+
+/** Card **/
+@import url(../blocks/card/card.css);
+@import url(../blocks/card/__image/card__image.css);
+@import url(../blocks/card/__image/card__image.css);
+@import url(../blocks/card/__image/_orientation/card__image_orientation_horizontal.css);
+@import url(../blocks/card/__container/card__container.css);
+@import url(../blocks/card/__description/card__description.css);
+
+/** Achievement **/
+@import url(../blocks/achievement/achievement.css);
+@import url(../blocks/achievement/__numbers/achievement__numbers.css);
+@import url(../blocks/achievement/__number/achievement__number.css);
+@import url(../blocks/achievement/__text/achievement__text.css);
+@import url(../blocks/achievement/__list/achievement__list.css);
+@import url(../blocks/achievement/__item/achievement__item.css);
+@import url(../blocks/achievement/__promise/achievement__promise.css);
+@import url(../blocks/achievement/__description/achievement__description.css);
+
+/** About-us **/
+@import url(../blocks/about-us/about-us.css);
+@import url(../blocks/about-us/__texts/about-us__texts.css);
+@import url(../blocks/about-us/__text/about-us__text.css);
+@import url(../blocks/about-us/__image/about-us__image.css);
+
+/** Request **/
+@import url(../blocks/request/request.css);
+@import url(../blocks/request/__container/request__container.css);
+@import url(../blocks/request/__description/request__description.css);
+@import url(../blocks/request/__input/request__input.css);
+
+/** Footer **/
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__contact/footer__contact.css);
+@import url(../blocks/footer/__phone/footer__phone.css);
+@import url(../blocks/footer/__email/footer__email.css);
+@import url(../blocks/footer/__social/footer__social.css);
+@import url(../blocks/footer/__social-logo/footer__social-logo.css);
+@import url(../blocks/footer/__sponsor/footer__sponsor.css);
+@import url(../blocks/footer/__title/footer__title.css);
+
+
+
+
+

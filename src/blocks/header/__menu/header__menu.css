@@ -1,0 +1,9 @@
+.header__menu {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0 56px;
+}
