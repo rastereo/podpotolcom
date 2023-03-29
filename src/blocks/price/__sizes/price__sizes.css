@@ -1,0 +1,5 @@
+.price__sizes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px 0;
+}

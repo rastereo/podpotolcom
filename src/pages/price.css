@@ -1,0 +1,61 @@
+/** Fonts **/
+@import url(../vendor/fonts/fonts.css);
+
+/** Normalize **/
+@import url(../vendor/normalize.css);
+
+/** Variables **/
+@import url(../vendor/variables/variables.css);
+
+/** Root **/
+@import url(../blocks/root/root.css);
+
+/** Link **/
+@import url(../blocks/link/link.css);
+
+/** List **/
+@import url(../blocks/list/list.css);
+
+/** Button-contact **/
+@import url(../blocks/button-contact/button-contact.css);
+
+/** Header **/
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/_border/header_border_none.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__menu/header__menu.css);
+
+/** Title **/
+@import url(../blocks/title/title.css);
+@import url(../blocks/title/_size/title_size_large.css);
+@import url(../blocks/title/_size/title_size_small.css);
+
+/** Price-container **/
+@import url(../blocks/price-container/price-container.css);
+@import url(../blocks/price-container/__description/price-container__description.css);
+
+/** Price **/
+@import url(../blocks/price/price.css);
+@import url(../blocks/price/__card/price__card.css);
+@import url(../blocks/price/__title/price__title.css);
+@import url(../blocks/price/__sizes/price__sizes.css);
+@import url(../blocks/price/__size/price__size.css);
+@import url(../blocks/price/__options/price__options.css);
+@import url(../blocks/price/__option/price__option.css);
+@import url(../blocks/price/__text/price__text.css);
+
+/** Request **/
+@import url(../blocks/request/request.css);
+@import url(../blocks/request/__container/request__container.css);
+@import url(../blocks/request/__description/request__description.css);
+@import url(../blocks/request/__input/request__input.css);
+
+/** Footer **/
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__contact/footer__contact.css);
+@import url(../blocks/footer/__phone/footer__phone.css);
+@import url(../blocks/footer/__email/footer__email.css);
+@import url(../blocks/footer/__social/footer__social.css);
+@import url(../blocks/footer/__social-logo/footer__social-logo.css);
+@import url(../blocks/footer/__sponsor/footer__sponsor.css);
+@import url(../blocks/footer/__title/footer__title.css);

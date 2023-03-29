@@ -1,0 +1,10 @@
+.price__card {
+  width: 48.76%;
+  min-height: 586px;
+  box-sizing: border-box;
+  border: 1px solid var(--price-card-border-color);
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  padding: 40px;
+}

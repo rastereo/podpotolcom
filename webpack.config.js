@@ -5,11 +5,12 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: {
-    main: './src/pages/index.js'
+    index: './src/pages/index.js',
+    price: './src/pages/price.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js',
+    filename: '[name].js',
     publicPath: '',
   },
   mode: 'development',
@@ -26,7 +27,7 @@ module.exports = {
         exclude: '/node_modules/'
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.(jpe?g|png|gif|svg|ico)$/,
         type: 'asset/resource',
         generator: {
           filename: "images/[name].[hash][ext]"
@@ -38,6 +39,7 @@ module.exports = {
           generator: {
             filename: "fonts/[name].[hash][ext]"
           },
+
         },
       {
         test: /\.css$/,
@@ -54,9 +56,18 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/index.html',
+      filename: 'index.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/price.html',
+      filename: 'price.html',
+      chunks: ['price']
     }),
     new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin({
+      filename: '[name].css'
+    }),
   ]
 }
