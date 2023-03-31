@@ -3,38 +3,29 @@
 :root{--root-background-color:#f9f9f9;--text-color:#000;--link-color-hover:#0007b4;--header-border-color:#000;--button-text-color:#fff;--button-background-color:#0007b4;--button-background-color-hover:#000581;--button-background-color-active:#000;--number-text-color:#0007b4;--input-text-color:#929292;--input-border-color:#000;--input-border-color-focus:#0007b4;--price-card-border-color:#000;--footer-border-color:#000;--time-transition:.5s}
 .root{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;background-color:var(--root-background-color);font-family:Inter,Arial,Helvetica,sans-serif;margin:auto;max-width:1312px;padding:12px 64px 0;text-rendering:optimizeLegibility}
 .link{color:var(--text-color);text-decoration:none;transition:color var(--time-transition)}.link:focus,.link:hover{color:var(--link-color-hover)}
+.link_active{color:var(--link-color-hover)}
 .list{list-style:none;margin:0;padding:0}
 .header{border-bottom:1px solid var(--header-border-color);display:flex;justify-content:space-between;padding-bottom:20px}
 .header__logo{background-image:url(images/logo-podpotolcom.51d2cb1876cb2b438dc3.svg);background-position:0 0;background-repeat:no-repeat;background-size:cover;height:48px;transition:background-image var(--time-transition);width:68px}.header__logo:focus,.header__logo:hover{background-image:url(images/logo-podpotolcom-hover.f27d89fae7fa5766825c.svg)}
 .header__menu{align-items:center;display:flex;font-size:20px;font-weight:400;gap:0 56px;line-height:1.2;text-transform:uppercase}
 .title{font-weight:400;line-height:1.2;margin:0;text-transform:uppercase}
-.title_size_large{align-self:center;font-size:90px}
 .title_size_medium{font-size:64px;padding-bottom:20px}
-.title_size_small{font-size:64px;max-width:528px}
-.presentation{align-items:end;display:grid;gap:0 32px;grid-template-columns:58% 1fr;grid-template-rows:135px 131px 1fr;padding:90px 0 0}
-.presentation_description{align-self:center;font-size:24px;font-weight:400;line-height:1.33;margin:0;max-width:526px}
-.presentation__scroll-button{align-self:start;background-color:var(--button-background-color);color:var(--button-text-color);font-size:24px;font-weight:600;grid-column:2;line-height:1.2;padding:19px 0;text-align:center;text-transform:uppercase;transition:background-color var(--time-transition)}.presentation__scroll-button:focus,.presentation__scroll-button:hover{background-color:var(--button-background-color-hover);color:var(--button-text-color)}.presentation__scroll-button:active{background-color:var(--button-background-color-active)}
-.presentation__image{display:block;width:100%}.presentation__image:first-of-type{grid-column-end:2;grid-column-start:1;grid-row-end:-1;grid-row-start:2}.presentation__image:nth-of-type(2){grid-column-end:-1;grid-column-start:2;grid-row-end:-1;grid-row-start:3}
-.assortment{padding-top:132px}
-.assortment__container{align-items:end;display:grid;gap:26px 35px;grid-template-columns:40% 1fr 40%;grid-template-rows:135px 1fr 1fr}
-.assortment__text{font-size:20px;font-weight:400;grid-column-end:-1;grid-column-start:2;grid-row-end:2;grid-row-start:1;line-height:1.6;margin:0}
-.card:first-of-type{grid-row-end:3;grid-row-start:1}.card:nth-of-type(2){grid-column-end:4;grid-column-start:2;grid-row-end:3;grid-row-start:2}.card:nth-of-type(3){grid-column-end:3;grid-column-start:1;grid-row-end:-1;grid-row-start:3}.card:nth-of-type(4){grid-column-end:-1;grid-column-start:3;grid-row-end:-1;grid-row-start:3}
-.card__image{display:block;-o-object-fit:cover;object-fit:cover;width:100%}
-.card__image_orientation_horizontal{height:529px}
-.card__container{align-items:center;border:1px solid;display:flex;justify-content:center;min-height:141px}
-.card__description{font-size:24px;font-weight:500;line-height:1.2;text-transform:uppercase}
-.achievement{padding-top:132px}
-.achievement_numbers{display:flex;justify-content:space-between;margin:auto;max-width:900px;padding:32px 0 110px}
-.achievement__number{color:var(--number-text-color);font-size:128px;font-weight:500;line-height:1.21;margin:0;text-align:center}
-.achievement__text{font-size:24px;font-weight:400;line-height:1.33;margin:0;text-align:center}
-.achievement__list{display:flex;flex-wrap:wrap;gap:44px 144px}
-.achievement__item{width:528px}
-.achievement__promise{font-size:40px;font-weight:400;line-height:1.2;margin:0;padding-bottom:20px;text-transform:uppercase}
-.achievement__description{font-size:20px;font-weight:400;line-height:1.6;margin:0}
-.about-us{padding-top:132px}
-.about-us__texts{display:flex;flex-direction:column;flex-wrap:wrap;font-size:20px;font-weight:400;gap:32px;line-height:1.6;max-height:288px;padding-bottom:37px}
-.about-us__text{margin:0;max-width:640px}
-.about-us__image{display:block;-o-object-fit:cover;object-fit:cover;width:100%}
+.title-block{padding:100px 0 36px}
+.title-block__description{font-size:20px;font-weight:400;line-height:1.6;margin:0}
+.social-links{display:flex;flex-wrap:wrap;gap:0 68px;margin:0}
+.social-links__logo{background-position:0 0;background-repeat:no-repeat;background-size:contain;display:block;height:48px;transition:background-image var(--time-transition);width:48px}.social-links__logo_name_vk{background-image:url(images/vk-logo.084d1ab9a975337438e7.svg)}.social-links__logo_name_ok{background-image:url(images/ok-logo.51a397aa6b995cb8ae74.svg)}.social-links__logo_name_telegram{background-image:url(images/telegram-logo.8291df741520110abe69.svg)}.social-links__logo_name_whatsapp{background-image:url(images/whatsapp-logo.7e17fee6f24f2a68358a.svg)}.social-links__logo_name_dzen{background-image:url(images/dzen-logo.7e5650b7a3868d8974bf.svg)}.social-links__logo_name_vk:hover{background-image:url(images/vk-logo-hover.71833f9213484c2bab2e.svg)}.social-links__logo_name_ok:hover{background-image:url(images/ok-logo-hover.048baa5df1e4dcb7dc2b.svg)}.social-links__logo_name_telegram:hover{background-image:url(images/telegram-logo-hover.65f800cf4e62af39df5f.svg)}.social-links__logo_name_whatsapp:hover{background-image:url(images/whatsapp-logo-hover.092b450cce0c440a2b7e.svg)}.social-links__logo_name_dzen:hover{background-image:url(images/dzen-logo-hover.d2cf7014bf0801755738.svg)}.social-links__logo_name_vk:focus{background-image:url(images/vk-logo-hover.71833f9213484c2bab2e.svg)}.social-links__logo_name_ok:focus{background-image:url(images/ok-logo-hover.048baa5df1e4dcb7dc2b.svg)}.social-links__logo_name_telegram:focus{background-image:url(images/telegram-logo-hover.65f800cf4e62af39df5f.svg)}.social-links__logo_name_whatsapp:focus{background-image:url(images/whatsapp-logo-hover.092b450cce0c440a2b7e.svg)}.social-links__logo_name_dzen:focus{background-image:url(images/dzen-logo-hover.d2cf7014bf0801755738.svg)}
+.contact{align-items:flex-start;display:flex;flex-wrap:wrap;gap:32px}
+.contact__photo{display:block;max-width:50%}
+.contact__list{display:flex;flex-direction:column;gap:25px;max-width:45%}
+.contact__title{font-size:20px;font-weight:400;line-height:1.6;margin:0;padding-bottom:15px}
+.contact__description{font-size:32px;font-weight:500;line-height:1.6;margin:0}
+.team{padding-top:132px}
+.team__list{display:flex;flex-wrap:wrap;justify-content:space-between}
+.team__card{align-items:center;display:flex;flex-direction:column;max-width:32%;text-align:center}
+.team__photo{display:block;height:416px;-o-object-fit:cover;object-fit:cover;width:100%}
+.team__person{align-items:center;display:flex;flex-direction:column;justify-content:center;padding:28px 0;width:80%}
+.team__name{font-size:40px;font-weight:400;line-height:1.2;margin:0;text-transform:uppercase}
+.team__job{font-size:20px;font-weight:400;line-height:1.6}
 .request{display:flex;gap:0 32px;justify-content:space-between;padding:132px 0 100px}
 .request__container{display:flex;flex-direction:row-reverse;gap:50px}
 .request__description{font-size:20px;font-weight:400;line-height:1.6;margin:0;padding-bottom:28px}
@@ -48,6 +39,4 @@
 .footer__sponsor{align-items:center;display:flex;gap:72px;justify-content:flex-start}
 .footer__title{font-size:32px;font-weight:400;line-height:1.2;margin:0;max-width:250px;text-transform:uppercase}
 .footer__logo-moscow{background-image:url(images/made-in-moscow-logo.2b41c6851c1bc4a1e9b4.svg);background-position:0 0;background-repeat:no-repeat;background-size:contain;height:114px;transition:background-image var(--time-transition);width:97px}.footer__logo-moscow:focus,.footer__logo-moscow:hover{background-image:url(images/made-in-moscow-logo-hover.563b56e6f1d147730cb8.svg)}
-.social-links{display:flex;flex-wrap:wrap;gap:0 68px;margin:0}
-.social-links__logo{background-position:0 0;background-repeat:no-repeat;background-size:contain;display:block;height:48px;transition:background-image var(--time-transition);width:48px}.social-links__logo_name_vk{background-image:url(images/vk-logo.084d1ab9a975337438e7.svg)}.social-links__logo_name_ok{background-image:url(images/ok-logo.51a397aa6b995cb8ae74.svg)}.social-links__logo_name_telegram{background-image:url(images/telegram-logo.8291df741520110abe69.svg)}.social-links__logo_name_whatsapp{background-image:url(images/whatsapp-logo.7e17fee6f24f2a68358a.svg)}.social-links__logo_name_dzen{background-image:url(images/dzen-logo.7e5650b7a3868d8974bf.svg)}.social-links__logo_name_vk:hover{background-image:url(images/vk-logo-hover.71833f9213484c2bab2e.svg)}.social-links__logo_name_ok:hover{background-image:url(images/ok-logo-hover.048baa5df1e4dcb7dc2b.svg)}.social-links__logo_name_telegram:hover{background-image:url(images/telegram-logo-hover.65f800cf4e62af39df5f.svg)}.social-links__logo_name_whatsapp:hover{background-image:url(images/whatsapp-logo-hover.092b450cce0c440a2b7e.svg)}.social-links__logo_name_dzen:hover{background-image:url(images/dzen-logo-hover.d2cf7014bf0801755738.svg)}.social-links__logo_name_vk:focus{background-image:url(images/vk-logo-hover.71833f9213484c2bab2e.svg)}.social-links__logo_name_ok:focus{background-image:url(images/ok-logo-hover.048baa5df1e4dcb7dc2b.svg)}.social-links__logo_name_telegram:focus{background-image:url(images/telegram-logo-hover.65f800cf4e62af39df5f.svg)}.social-links__logo_name_whatsapp:focus{background-image:url(images/whatsapp-logo-hover.092b450cce0c440a2b7e.svg)}.social-links__logo_name_dzen:focus{background-image:url(images/dzen-logo-hover.d2cf7014bf0801755738.svg)}
 
