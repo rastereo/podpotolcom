@@ -10,6 +10,7 @@
 .header__menu{align-items:center;display:flex;font-size:20px;font-weight:400;gap:0 56px;line-height:1.2;text-transform:uppercase}
 .title{font-weight:400;line-height:1.2;margin:0;text-transform:uppercase}
 .title_size_medium{font-size:64px;padding-bottom:20px}
+.title_size_small{font-size:64px;max-width:528px}
 .title-block{padding:100px 0 36px}
 .title-block__description{font-size:20px;font-weight:400;line-height:1.6;margin:0}
 .social-links{display:flex;flex-wrap:wrap;gap:0 68px;margin:0}
