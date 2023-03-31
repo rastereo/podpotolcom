@@ -1,0 +1,6 @@
+.team__photo {
+  width: 100%;
+  height: 416px;
+  display: block;
+  object-fit: cover;
+}

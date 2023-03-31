@@ -75,8 +75,10 @@
 @import url(../blocks/footer/__contact/footer__contact.css);
 @import url(../blocks/footer/__phone/footer__phone.css);
 @import url(../blocks/footer/__email/footer__email.css);
-@import url(../blocks/footer/__social/footer__social.css);
-@import url(../blocks/footer/__social-logo/footer__social-logo.css);
 @import url(../blocks/footer/__sponsor/footer__sponsor.css);
 @import url(../blocks/footer/__title/footer__title.css);
 @import url(../blocks/footer/__logo-moscow/footer__logo-moscow.css);
+
+/** Social-links **/
+@import url(../blocks/social-links/social-links.css);
+@import url(../blocks/social-links/__logo/social-links__logo.css);

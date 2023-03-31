@@ -1,3 +1,5 @@
 .request__container {
-  max-width: 752px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 50px;
 }

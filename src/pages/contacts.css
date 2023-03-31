@@ -24,23 +24,31 @@
 
 /** Title **/
 @import url(../blocks/title/title.css);
-@import url(../blocks/title/_size/title_size_large.css);
 @import url(../blocks/title/_size/title_size_medium.css);
-@import url(../blocks/title/_size/title_size_small.css);
 
 /** Title-block **/
 @import url(../blocks/title-block/title-block.css);
 @import url(../blocks/title-block/__description/title-block__description.css);
 
-/** Price **/
-@import url(../blocks/price/price.css);
-@import url(../blocks/price/__card/price__card.css);
-@import url(../blocks/price/__title/price__title.css);
-@import url(../blocks/price/__sizes/price__sizes.css);
-@import url(../blocks/price/__size/price__size.css);
-@import url(../blocks/price/__options/price__options.css);
-@import url(../blocks/price/__option/price__option.css);
-@import url(../blocks/price/__text/price__text.css);
+/** Social-links **/
+@import url(../blocks/social-links/social-links.css);
+@import url(../blocks/social-links/__logo/social-links__logo.css);
+
+/** Contact **/
+@import url(../blocks/contact/contact.css);
+@import url(../blocks/contact/__photo/contact__photo.css);
+@import url(../blocks/contact/__list/contact__list.css);
+@import url(../blocks/contact/__title/contact__title.css);
+@import url(../blocks/contact/__description/contact__description.css);
+
+/** Team **/
+@import url(../blocks/team/team.css);
+@import url(../blocks/team/__list/team__list.css);
+@import url(../blocks/team/__card/team__card.css);
+@import url(../blocks/team/__photo/team__photo.css);
+@import url(../blocks/team/__person/team__person.css);
+@import url(../blocks/team/__name/team__name.css);
+@import url(../blocks/team/__job/team__job.css);
 
 /** Request **/
 @import url(../blocks/request/request.css);
@@ -58,7 +66,3 @@
 @import url(../blocks/footer/__sponsor/footer__sponsor.css);
 @import url(../blocks/footer/__title/footer__title.css);
 @import url(../blocks/footer/__logo-moscow/footer__logo-moscow.css);
-
-/** Social-links **/
-@import url(../blocks/social-links/social-links.css);
-@import url(../blocks/social-links/__logo/social-links__logo.css);

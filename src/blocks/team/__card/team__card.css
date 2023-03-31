@@ -1,0 +1,7 @@
+.team__card {
+  max-width: 32%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
