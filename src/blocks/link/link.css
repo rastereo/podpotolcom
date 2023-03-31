@@ -1,9 +1,13 @@
 .link {
   text-decoration: none;
   color: var(--text-color);
-  transition: opacity .6s;
+  transition: color var(--time-transition);
 }
 
 .link:hover {
-  opacity: .8;
+  color: var(--link-color-hover);
+}
+
+.link:focus {
+  color: var(--link-color-hover);
 }

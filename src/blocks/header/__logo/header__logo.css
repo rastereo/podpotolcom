@@ -1,4 +1,18 @@
 .header__logo {
-  width: 80px;
-  height: 60px;
+  width: 68px;
+  height: 48px;
+  /* outline: 2px solid red; */
+  background-image: url(../../../images/logo-podpotolcom.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  transition: background-image var(--time-transition);
+}
+
+.header__logo:hover {
+  background-image: url(../../../images/logo-podpotolcom-hover.svg);
+}
+
+.header__logo:focus {
+  background-image: url(../../../images/logo-podpotolcom-hover.svg);
 }

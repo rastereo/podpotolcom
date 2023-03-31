@@ -1,5 +1,6 @@
 .footer__sponsor {
-  max-width: 414px;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
+  gap: 72px;
 }

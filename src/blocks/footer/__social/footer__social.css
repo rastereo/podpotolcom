@@ -1,6 +1,6 @@
 .footer__social {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 0 68px;
   margin: 0;
 }

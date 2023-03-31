@@ -1,7 +1,7 @@
 .achievement_numbers {
-  max-width: 950px;
+  max-width: 900px;
   display: flex;
   justify-content: space-between;
   margin: auto;
-  padding: 24px 0 108px;
+  padding: 32px 0 110px;
 }

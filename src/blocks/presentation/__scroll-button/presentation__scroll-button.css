@@ -1,0 +1,28 @@
+.presentation__scroll-button {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  align-self: start;
+  padding: 19px 0;
+  color: var(--button-text-color);
+  background-color: var(--button-background-color);
+  transition: background-color var(--time-transition);
+
+  grid-column: 2;
+}
+
+.presentation__scroll-button:hover {
+  color: var(--button-text-color);
+  background-color: var(--button-background-color-hover);
+}
+
+.presentation__scroll-button:focus {
+  color: var(--button-text-color);
+  background-color: var(--button-background-color-hover);
+}
+
+.presentation__scroll-button:active {
+  background-color: var(--button-background-color-active);
+}

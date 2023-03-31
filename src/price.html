@@ -9,12 +9,11 @@
 </head>
 
 <body class="root">
-  <header class="header">
-    <a href="." class="link"><img src="<%=require('./images/logo-podpotolcom.svg')%>" alt="Лого Под потолком"
-        class="header__logo"></a>
+  <header class="header header_border_none">
+    <a href="." class="header__logo link"></a>
     <ul class="header__menu list">
       <li>
-        <a href="./price.html" class="link">цены</a>
+        <a href="./price.html" class="link link_active">цены</a>
       </li>
       <li>
         <a href="#" class="link">каталог</a>
@@ -186,17 +185,17 @@
         этажа.Просим учесть, что подбор цвета "под шкаф" и т.п., нами не осуществляется. Мы покрываем изделия лаком,
         образцы которых, мастер привозит на замер, и краской, которая колеруется в цвет который вы выберете.</p>
     </section>
-    <section class="request">
+    <section id="connect" class="request">
       <h2 class="title title_size_small">давайте создавать вместе</h2>
       <div class="request__container">
         <p class="request__description">Выезжаем на замер по Москве и области. Проводим онлайн консультации в регионах
           как произвести самостоятельный замер</p>
         <form action="#" name="request" method="get" class="request__form">
-          <input type="tel" name="phone" placeholder="Ваш телефон" class="request__input request__input_value_phone"
+          <input type="text" name="name" placeholder="Имя, фамилия" class="request__input request__input_value_name"
             required>
-          <input type="text" name="name" placeholder="Ваше имя" class="request__input request__input_value_name"
-            required>
-          <button type="submit" class="button-contact">обсудить проект</button>
+          <input type="tel" name="phone" placeholder="+ 7 (___) ___-__-__"
+            class="request__input request__input_value_phone" required>
+          <button type="submit" class="request__button-submit">обсудить проект</button>
         </form>
       </div>
     </section>
@@ -207,37 +206,35 @@
       <a href="mailto:podpotolcom@yandex.ru" class="footer__email link">podpotolcom@yandex.ru</a>
       <ul class="footer__social list">
         <li>
-          <a href="https://vk.com/podpotolcom" target="_blank" class="link">
-            <img src="<%=require('./images/social/vk-logo.svg')%>" alt="Лого вконтакте" class="footer__social-logo">
+          <a href="https://vk.com/podpotolcom" target="_blank"
+            class="footer__social-logo footer__social-logo_name_vk link">
           </a>
         </li>
         <li>
-          <a href="https://ok.ru/podpotolcom" target="_blank" class="link">
-            <img src="<%=require('./images/social/ok-logo.svg')%>" alt="Лого однокласники" class="footer__social-logo">
+          <a href="https://ok.ru/podpotolcom" target="_blank"
+            class="footer__social-logo footer__social-logo_name_ok link">
           </a>
         </li>
         <li>
-          <a href="https://t.me/podpotolkom" target="_blank" class="link">
-            <img src="<%=require('./images/social/telegram-logo.svg')%>" alt="Лого телеграм"
-              class="footer__social-logo">
+          <a href="https://t.me/podpotolkom" target="_blank"
+            class="footer__social-logo footer__social-logo_name_telegram link">
           </a>
         </li>
         <li>
-          <a href="https://api.whatsapp.com/send/?phone=79031396791" target="_blank" class="link">
-            <img src="<%=require('./images/social/whatsapp-logo.svg')%>" alt="Лого вотсап" class="footer__social-logo">
+          <a href="https://api.whatsapp.com/send/?phone=79031396791" target="_blank"
+            class="footer__social-logo footer__social-logo_name_whatsapp link ">
           </a>
         </li>
         <li>
-          <a href="https://dzen.ru/id/62418a6b08a9cd7376eb2f2b?utm_referer=podpotol.com" target="_blank" class="link">
-            <img src="<%=require('./images/social/dzen-logo.svg')%>" alt="Лого дзен" class="footer__social-logo">
+          <a href="https://dzen.ru/id/62418a6b08a9cd7376eb2f2b?utm_referer=podpotol.com" target="_blank"
+            class="footer__social-logo footer__social-logo_name_dzen link">
           </a>
         </li>
       </ul>
     </div>
     <div class="footer__sponsor">
       <h3 class="footer__title">Мы являемся участниками программы</h3>
-      <a href="https://сделановмоскве.рф/" target="_blank" class="link">
-        <img src="<%=require('./images/made-in-moscow-logo.svg')%>" alt="Сделано в Москве">
+      <a href="https://сделановмоскве.рф/" target="_blank" class="footer__logo-moscow link">
       </a>
     </div>
   </footer>

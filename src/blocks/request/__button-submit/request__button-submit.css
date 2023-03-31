@@ -1,0 +1,24 @@
+.request__button-submit {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  border: none;
+  color: var(--button-text-color);
+  background-color: var(--button-background-color);
+  cursor: pointer;
+  padding: 19px 56px;
+  transition: background-color var(--time-transition);
+}
+
+.request__button-submit:hover {
+  background-color: var(--button-background-color-hover);
+}
+
+.request__button-submit:focus {
+  background-color: var(--button-background-color-hover);
+}
+
+.request__button-submit:active {
+  background-color: var(--button-background-color-active);
+}

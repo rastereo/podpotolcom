@@ -1,11 +1,18 @@
 .request__input {
+  min-width: 353px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
   border: 1px solid var(--input-border-color);
-  margin-bottom: 24px;
-  padding: 20px 250px;
+  padding: 20px;
 }
 
 .request__input::placeholder {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.6;
+  color: var(--input-text-color);
 }
+

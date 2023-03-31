@@ -18,7 +18,6 @@
 
 /** Header **/
 @import url(../blocks/header/header.css);
-@import url(../blocks/header/_border/header_border_none.css);
 @import url(../blocks/header/__logo/header__logo.css);
 @import url(../blocks/header/__menu/header__menu.css);
 
@@ -28,12 +27,10 @@
 @import url(../blocks/title/_size/title_size_medium.css);
 @import url(../blocks/title/_size/title_size_small.css);
 
-/** Button-contact **/
-@import url(../blocks/button-contact/button-contact.css);
-
 /** Presentation **/
 @import url(../blocks/presentation/presentation.css);
 @import url(../blocks/presentation/__description/presentation__description.css);
+@import url(../blocks/presentation/__scroll-button/presentation__scroll-button.css);
 @import url(../blocks/presentation/__image/presentation__image.css);
 
 /** Assortment **/
@@ -70,6 +67,8 @@
 @import url(../blocks/request/__container/request__container.css);
 @import url(../blocks/request/__description/request__description.css);
 @import url(../blocks/request/__input/request__input.css);
+@import url(../blocks/request/__form/request__form.css);
+@import url(../blocks/request/__button-submit/request__button-submit.css);
 
 /** Footer **/
 @import url(../blocks/footer/footer.css);
@@ -80,8 +79,4 @@
 @import url(../blocks/footer/__social-logo/footer__social-logo.css);
 @import url(../blocks/footer/__sponsor/footer__sponsor.css);
 @import url(../blocks/footer/__title/footer__title.css);
-
-
-
-
-
+@import url(../blocks/footer/__logo-moscow/footer__logo-moscow.css);

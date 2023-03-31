@@ -1,11 +1,17 @@
 :root {
   --root-background-color: #f9f9f9;
   --text-color: #000;
+  --link-color-hover: #0007B4;
   --header-border-color: #000;
   --button-text-color: #fff;
   --button-background-color: #0007b4;
+  --button-background-color-hover: #000581;
+  --button-background-color-active: #000;
   --number-text-color: #0007b4;
+  --input-text-color: #929292;
   --input-border-color: #000;
+  --input-border-color-focus: #0007B4;
   --price-card-border-color: #000;
   --footer-border-color: #000;
+  --time-transition: .5s;
 }

@@ -2,4 +2,68 @@
   display: block;
   width: 48px;
   height: 48px;
+  background-position: 0 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: background-image var(--time-transition);
+}
+
+.footer__social-logo_name_vk {
+  background-image: url(../../../images/social/vk-logo.svg);
+}
+
+.footer__social-logo_name_ok {
+  background-image: url(../../../images/social/ok-logo.svg);
+}
+
+.footer__social-logo_name_telegram {
+  background-image: url(../../../images/social/telegram-logo.svg);
+}
+
+.footer__social-logo_name_whatsapp {
+  background-image: url(../../../images/social/whatsapp-logo.svg);
+}
+
+.footer__social-logo_name_dzen {
+  background-image: url(../../../images/social/dzen-logo.svg);
+}
+
+.footer__social-logo_name_vk:hover {
+  background-image: url(../../../images/social/vk-logo-hover.svg);
+}
+
+.footer__social-logo_name_ok:hover {
+  background-image: url(../../../images/social/ok-logo-hover.svg);
+}
+
+.footer__social-logo_name_telegram:hover {
+  background-image: url(../../../images/social/telegram-logo-hover.svg);
+}
+
+.footer__social-logo_name_whatsapp:hover {
+  background-image: url(../../../images/social/whatsapp-logo-hover.svg);
+}
+
+.footer__social-logo_name_dzen:hover {
+  background-image: url(../../../images/social/dzen-logo-hover.svg);
+}
+
+.footer__social-logo_name_vk:focus {
+  background-image: url(../../../images/social/vk-logo-hover.svg);
+}
+
+.footer__social-logo_name_ok:focus {
+  background-image: url(../../../images/social/ok-logo-hover.svg);
+}
+
+.footer__social-logo_name_telegram:focus {
+  background-image: url(../../../images/social/telegram-logo-hover.svg);
+}
+
+.footer__social-logo_name_whatsapp:focus {
+  background-image: url(../../../images/social/whatsapp-logo-hover.svg);
+}
+
+.footer__social-logo_name_dzen:focus {
+  background-image: url(../../../images/social/dzen-logo-hover.svg);
 }

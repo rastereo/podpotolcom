@@ -1,0 +1,17 @@
+.footer__logo-moscow {
+  width: 97px;
+  height: 114px;
+  background-image: url(../../../images/made-in-moscow-logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  transition: background-image var(--time-transition);
+}
+
+.footer__logo-moscow:hover {
+  background-image: url(../../../images/made-in-moscow-logo-hover.svg);
+}
+
+.footer__logo-moscow:focus {
+  background-image: url(../../../images/made-in-moscow-logo-hover.svg);
+}
