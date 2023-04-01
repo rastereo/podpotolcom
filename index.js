@@ -1,1 +1,78 @@
-(()=>{"use strict";function e(e,t){(null==t||t>e.length)&&(t=e.length);for(var r=0,n=new Array(t);r<t;r++)n[r]=e[r];return n}var t=document.querySelector(".request__input_value_phone"),r=document.querySelectorAll('a[href*="#"]');t.addEventListener("input",(function(e){var r,n,o=t.value.replace(/\D+/g,"");r=t.value.includes("+8")||"8"===t.value[0]?"":"+";for(var a=0;a<o.length&&a<11;a++){switch(a){case 0:r+="7"===(n=o[a])?"7 (":"8"===n?"8 (":"9"===n?"7 (9":"7 (";continue;case 4:r+=") ";break;case 7:case 9:r+="-"}r+=o[a]}t.value=r}));var n,o=function(t,r){var n="undefined"!=typeof Symbol&&t[Symbol.iterator]||t["@@iterator"];if(!n){if(Array.isArray(t)||(n=function(t,r){if(t){if("string"==typeof t)return e(t,r);var n=Object.prototype.toString.call(t).slice(8,-1);return"Object"===n&&t.constructor&&(n=t.constructor.name),"Map"===n||"Set"===n?Array.from(t):"Arguments"===n||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)?e(t,r):void 0}}(t))){n&&(t=n);var o=0,a=function(){};return{s:a,n:function(){return o>=t.length?{done:!0}:{done:!1,value:t[o++]}},e:function(e){throw e},f:a}}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}var u,i=!0,c=!1;return{s:function(){n=n.call(t)},n:function(){var e=n.next();return i=e.done,e},e:function(e){c=!0,u=e},f:function(){try{i||null==n.return||n.return()}finally{if(c)throw u}}}}(r);try{var a=function(){var e=n.value;e.addEventListener("click",(function(t){t.preventDefault();var r=e.getAttribute("href").substr(1);document.getElementById(r).scrollIntoView({behavior:"smooth",block:"start"})}))};for(o.s();!(n=o.n()).done;)a()}catch(e){o.e(e)}finally{o.f()}})();
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+var __webpack_exports__ = {};
+function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+
+var input = document.querySelector(".request__input_value_phone");
+var anchors = document.querySelectorAll('a[href*="#"]');
+var prefixNumber = function prefixNumber(str) {
+  if (str === "7") {
+    return "7 (";
+  }
+  if (str === "8") {
+    return "8 (";
+  }
+  if (str === "9") {
+    return "7 (9";
+  }
+  return "7 (";
+};
+input.addEventListener("input", function (e) {
+  var value = input.value.replace(/\D+/g, "");
+  var numberLength = 11;
+  var result;
+  if (input.value.includes("+8") || input.value[0] === "8") {
+    result = "";
+  } else {
+    result = "+";
+  }
+
+  //
+  for (var i = 0; i < value.length && i < numberLength; i++) {
+    switch (i) {
+      case 0:
+        result += prefixNumber(value[i]);
+        continue;
+      case 4:
+        result += ") ";
+        break;
+      case 7:
+        result += "-";
+        break;
+      case 9:
+        result += "-";
+        break;
+      default:
+        break;
+    }
+    result += value[i];
+  }
+  //
+  input.value = result;
+});
+var _iterator = _createForOfIteratorHelper(anchors),
+  _step;
+try {
+  var _loop = function _loop() {
+    var anchor = _step.value;
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      var blockID = anchor.getAttribute('href').substr(1);
+      document.getElementById(blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  };
+  for (_iterator.s(); !(_step = _iterator.n()).done;) {
+    _loop();
+  }
+} catch (err) {
+  _iterator.e(err);
+} finally {
+  _iterator.f();
+}
+/******/ })()
+;
