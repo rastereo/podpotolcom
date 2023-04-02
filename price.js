@@ -1,6 +1,1 @@
-/******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
-var __webpack_exports__ = {};
-
-/******/ })()
-;
+(()=>{"use strict";var e=document.querySelector(".request__input_value_phone");e.addEventListener("input",(function(a){var u,t,c=e.value.replace(/\D+/g,"");u=e.value.includes("+8")||"8"===e.value[0]?"":"+";for(var n=0;n<c.length&&n<11;n++){switch(n){case 0:u+="7"===(t=c[n])?"7 (":"8"===t?"8 (":"9"===t?"7 (9":"7 (";continue;case 4:u+=") ";break;case 7:case 9:u+="-"}u+=c[n]}e.value=u}))})();
