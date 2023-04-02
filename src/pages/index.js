@@ -1,5 +1,8 @@
 import './index.css'
 
+import { CountUp } from 'countup.js';
+
+const numbers = Array.from(document.querySelectorAll('#number'))
 const input = document.querySelector(".request__input_value_phone");
 const anchors = document.querySelectorAll('a[href*="#"]')
 
@@ -63,3 +66,18 @@ for (let anchor of anchors) {
     })
   })
 }
+
+numbers.forEach(number => {
+  const countUp = new CountUp(number, number.textContent, {
+    enableScrollSpy: true,
+    scrollSpyDelay: -25,
+    duration: 5,
+    scrollSpyOnce: true
+  });
+
+  if (!countUp.error) {
+    countUp.start();
+  } else {
+    console.error(countUp.error);
+  }
+})

@@ -1,4 +1,5 @@
 .achievement__number {
+  min-width: 200px;
   font-weight: 500;
   font-size: 128px;
   line-height: 1.21;

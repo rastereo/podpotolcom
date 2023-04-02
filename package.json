@@ -38,7 +38,8 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
-    "core-js": "^3.29.0"
+    "core-js": "^3.29.0",
+    "countup.js": "^2.6.0"
   },
   "repository": {
     "type": "git",
