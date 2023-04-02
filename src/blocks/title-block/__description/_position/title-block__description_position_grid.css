@@ -1,0 +1,6 @@
+.title-block__description_position_grid {
+  grid-column-start: 2;
+  grid-column-end: -1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}

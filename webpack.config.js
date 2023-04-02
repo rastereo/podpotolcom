@@ -9,18 +9,19 @@ module.exports = {
   entry: {
     index: './src/pages/index.js',
     price: './src/pages/price.js',
-    contacts: './src/pages/contacts.js'
+    contacts: './src/pages/contacts.js',
+    loft_bed_adult: './src/pages/loft_bed_adult.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',
     publicPath: '',
   },
-  performance: {
-    hints: false,
-    maxEntrypointSize: 512000,
-    maxAssetSize: 512000
-  },
+  // performance: {
+  //   hints: false,
+  //   maxEntrypointSize: 512000,
+  //   maxAssetSize: 512000
+  // },
   mode: 'development',
   devServer: {
     static: path.resolve(__dirname, './dist'),
@@ -61,46 +62,9 @@ module.exports = {
     },
     ]
   },
-  plugins: [
-    new FaviconsWebpackPlugin({
-      logo: './src/images/logo-podpotolcom.svg', // svg works too!
-      mode: 'webapp', // optional can be 'webapp', 'light' or 'auto' - 'auto' by default
-      devMode: 'webapp', // optional can be 'webapp' or 'light' - 'light' by default
-      favicons: {
-        appName: 'Под потолком',
-        appDescription: 'Кровати ручной работы: высокое качество и надёжность',
-        developerName: 'rastereo',
-        developerURL: null, // prevent retrieving from the nearest package.json
-        background: '#ddd',
-        theme_color: '#333',
-        icons: {
-          coast: false,
-          yandex: false
-        }
-      }
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/index.html',
-      filename: 'index.html',
-      chunks: ['index']
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/price.html',
-      filename: 'price.html',
-      chunks: ['price']
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/contacts.html',
-      filename: 'contacts.html',
-      chunks: ['contacts']
-    }),
-    new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin({
-      filename: '[name].css'
-    }),
-  ],
   optimization: {
     minimizer: [
+      "...",
       new ImageMinimizerPlugin({
         minimizer: {
           implementation: ImageMinimizerPlugin.imageminMinify,
@@ -140,4 +104,48 @@ module.exports = {
       }),
     ],
   },
+  plugins: [
+    new FaviconsWebpackPlugin({
+      logo: './src/images/logo-podpotolcom.svg', // svg works too!
+      mode: 'webapp', // optional can be 'webapp', 'light' or 'auto' - 'auto' by default
+      devMode: 'webapp', // optional can be 'webapp' or 'light' - 'light' by default
+      prefix: 'images/favicons/',
+      favicons: {
+        appName: 'Под потолком',
+        appDescription: 'Кровати ручной работы: высокое качество и надёжность',
+        developerName: 'rastereo',
+        developerURL: null, // prevent retrieving from the nearest package.json
+        background: '#ddd',
+        theme_color: '#333',
+        icons: {
+          coast: false,
+          yandex: false
+        }
+      }
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+      filename: 'index.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/price.html',
+      filename: 'price.html',
+      chunks: ['price']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/contacts.html',
+      filename: 'contacts.html',
+      chunks: ['contacts']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/loft_bed_adult.html',
+      filename: 'loft_bed_adult.html',
+      chunks: ['loft_bed_adult']
+    }),
+    new CleanWebpackPlugin(),
+    new MiniCssExtractPlugin({
+      filename: '[name].css'
+    }),
+  ],
 }

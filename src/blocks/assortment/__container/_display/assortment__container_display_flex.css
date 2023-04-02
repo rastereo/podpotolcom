@@ -1,0 +1,7 @@
+.assortment__container_display_flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}

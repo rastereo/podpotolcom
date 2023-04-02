@@ -1,7 +1,7 @@
 .card__container {
-  min-height: 141px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid;
+  padding: 50px 0;
 }

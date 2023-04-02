@@ -1,3 +1,11 @@
+.card {
+  transition: box-shadow var(--time-transition);
+}
+
+.card:hover {
+  box-shadow: var(--card-box-shadow-hover);
+}
+
 .card:nth-of-type(1) {
   grid-row-start: 1;
   grid-row-end: 3;

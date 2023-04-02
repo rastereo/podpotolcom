@@ -1,4 +1,4 @@
-import './price.css'
+import './loft_bed_adult.css'
 
 const input = document.querySelector(".request__input_value_phone");
 
