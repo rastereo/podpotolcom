@@ -24,8 +24,8 @@
 .card__container{align-items:center;border:1px solid;display:flex;justify-content:center;padding:50px 0}
 .card__description{font-size:24px;font-weight:500;line-height:1.2;text-transform:uppercase}
 .achievement{padding-top:132px}
-.achievement_numbers{display:flex;justify-content:space-between;margin:auto;max-width:900px;padding:32px 0 110px}
-.achievement__number{color:var(--number-text-color);font-size:128px;font-weight:500;line-height:1.21;margin:0;text-align:center}
+.achievement_numbers{display:flex;flex-wrap:wrap;justify-content:space-between;margin:auto;max-width:75%;padding:32px 0 110px}
+.achievement__number{color:var(--number-text-color);font-size:128px;font-weight:500;line-height:1.21;margin:0;min-width:200px;text-align:center}
 .achievement__text{font-size:24px;font-weight:400;line-height:1.33;margin:0;text-align:center}
 .achievement__list{display:flex;flex-wrap:wrap;gap:44px 144px}
 .achievement__item{width:528px}
