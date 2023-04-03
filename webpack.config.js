@@ -11,6 +11,7 @@ module.exports = {
     price: './src/pages/price.js',
     contacts: './src/pages/contacts.js',
     loftBedAdult: './src/pages/loft-bed-adult.js',
+    loftBedChildren: './src/pages/loft-bed-children.js',
     clerk: './src/pages/clerk.js',
     rostislav: './src/pages/rostislav.js',
     vladislav: './src/pages/vladislav.js'
@@ -145,6 +146,11 @@ module.exports = {
       template: './src/loft-bed-adult.html',
       filename: 'loft-bed-adult.html',
       chunks: ['loftBedAdult']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/loft-bed-children.html',
+      filename: 'loft-bed-children.html',
+      chunks: ['loftBedChildren']
     }),
     new HtmlWebpackPlugin({
       template: './src/clerk.html',

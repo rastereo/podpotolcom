@@ -1,7 +1,8 @@
 .presentation {
+  width: 100%;
   display: grid;
   grid-template-columns: 58% 1fr;
-  grid-template-rows: 135px 131px 1fr;
+  grid-template-rows: 135px 70px 1fr;
   align-items: end;
   gap: 0 32px;
   padding: 90px 0 0;

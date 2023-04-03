@@ -1,9 +1,12 @@
 .presentation__image {
   display: block;
   width: 100%;
+  max-height: 531px;
+  object-fit: cover;
 }
 
 .presentation__image:nth-of-type(1) {
+  max-height: 531px;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
@@ -11,6 +14,7 @@
 }
 
 .presentation__image:nth-of-type(2) {
+  max-height: 433px;
   grid-column-start: 2;
   grid-column-end: -1;
   grid-row-start: 3;
