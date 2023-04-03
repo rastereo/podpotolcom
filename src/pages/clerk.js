@@ -1,6 +1,16 @@
-import './loft_bed_adult.css'
+import './clerk.css'
 
+import PopupWithImage from '../components/PopupWithImage.js';
+
+const imageList = Array.from(document.querySelectorAll('.gallery__photo'))
+const popupWithImage = new PopupWithImage('.popup_name_image');
 const input = document.querySelector(".request__input_value_phone");
+
+popupWithImage.setEventListeners()
+
+imageList.forEach(image => {
+  image.addEventListener('click', () => popupWithImage.open(image.src))
+})
 
 const prefixNumber = (str) => {
   if (str === "7") {

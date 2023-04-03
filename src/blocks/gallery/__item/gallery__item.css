@@ -1,0 +1,7 @@
+.gallery__item {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  cursor: pointer;
+  transition: box-shadow var(--time-transition);
+}

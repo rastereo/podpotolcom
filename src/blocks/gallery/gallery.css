@@ -1,0 +1,8 @@
+.gallery {
+  display: grid;
+  justify-items: start;
+  align-items: start;
+  grid-template-columns: 1fr 1fr;
+  grid-row: 372px 380px 572px 372px 380px;
+  gap: 32px;
+}

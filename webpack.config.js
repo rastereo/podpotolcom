@@ -10,7 +10,10 @@ module.exports = {
     index: './src/pages/index.js',
     price: './src/pages/price.js',
     contacts: './src/pages/contacts.js',
-    loft_bed_adult: './src/pages/loft_bed_adult.js'
+    loftBedAdult: './src/pages/loft-bed-adult.js',
+    clerk: './src/pages/clerk.js',
+    rostislav: './src/pages/rostislav.js',
+    vladislav: './src/pages/vladislav.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -139,9 +142,24 @@ module.exports = {
       chunks: ['contacts']
     }),
     new HtmlWebpackPlugin({
-      template: './src/loft_bed_adult.html',
-      filename: 'loft_bed_adult.html',
-      chunks: ['loft_bed_adult']
+      template: './src/loft-bed-adult.html',
+      filename: 'loft-bed-adult.html',
+      chunks: ['loftBedAdult']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/clerk.html',
+      filename: 'clerk.html',
+      chunks: ['clerk']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/rostislav.html',
+      filename: 'rostislav.html',
+      chunks: ['rostislav']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/vladislav.html',
+      filename: 'vladislav.html',
+      chunks: ['vladislav']
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
