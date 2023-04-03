@@ -18,11 +18,11 @@
 .assortment{padding-top:132px}
 .assortment__container{align-items:end;display:grid;gap:26px 35px;grid-template-columns:40% 1fr 40%;grid-template-rows:135px 1fr 1fr}
 .assortment__text{font-size:20px;font-weight:400;grid-column-end:-1;grid-column-start:2;grid-row-end:2;grid-row-start:1;line-height:1.6;margin:0}
-.card{transition:box-shadow var(--time-transition)}.card:hover{box-shadow:var(--card-box-shadow-hover)}.card:first-of-type{grid-row-end:3;grid-row-start:1}.card:nth-of-type(2){grid-column-end:4;grid-column-start:2;grid-row-end:3;grid-row-start:2}.card:nth-of-type(3){grid-column-end:3;grid-column-start:1;grid-row-end:-1;grid-row-start:3}.card:nth-of-type(4){grid-column-end:-1;grid-column-start:3;grid-row-end:-1;grid-row-start:3}
+.card{transition:box-shadow var(--time-transition);width:100%}.card:hover{box-shadow:var(--card-box-shadow-hover)}.card:first-of-type{grid-row-end:3;grid-row-start:1}.card:nth-of-type(2){grid-column-end:4;grid-column-start:2;grid-row-end:3;grid-row-start:2}.card:nth-of-type(3){grid-column-end:3;grid-column-start:1;grid-row-end:-1;grid-row-start:3}.card:nth-of-type(4){grid-column-end:-1;grid-column-start:3;grid-row-end:-1;grid-row-start:3}
 .card__image{display:block;-o-object-fit:cover;object-fit:cover;width:100%}
 .card__image_orientation_horizontal{height:529px}
-.card__container{align-items:center;border:1px solid;display:flex;justify-content:center;padding:50px 0}
-.card__description{font-size:24px;font-weight:500;line-height:1.2;text-transform:uppercase}
+.card__container{align-items:center;border:1px solid;box-sizing:border-box;display:flex;height:145px;justify-content:center;width:100%}
+.card__description{font-size:24px;font-weight:500;line-height:1.2;margin:0;max-width:90%;text-align:center;text-transform:uppercase}
 .achievement{padding-top:132px}
 .achievement_numbers{display:flex;flex-wrap:wrap;justify-content:space-between;margin:auto;max-width:75%;padding:32px 0 110px}
 .achievement__number{color:var(--number-text-color);font-size:128px;font-weight:500;line-height:1.21;margin:0;min-width:200px;text-align:center}
