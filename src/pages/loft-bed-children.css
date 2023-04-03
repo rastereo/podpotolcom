@@ -17,6 +17,9 @@
 /** List **/
 @import url(../blocks/list/list.css);
 
+/** Medium **/
+@import url(../blocks/medium/medium.css);
+
 /** Header **/
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__logo/header__logo.css);
@@ -52,6 +55,7 @@
 
 /** Card **/
 @import url(../blocks/card/card.css);
+@import url(../blocks/card/card/_size/card_size_small.css);
 @import url(../blocks/card/__image/card__image.css);
 @import url(../blocks/card/__image/_size/card__image_size_small.css);
 @import url(../blocks/card/__container/card__container.css);

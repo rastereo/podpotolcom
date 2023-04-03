@@ -37,6 +37,7 @@
 @import url(../blocks/title-block/__description/title-block__description.css);
 @import url(../blocks/title-block/__description/_position/title-block__description_position_grid.css);
 @import url(../blocks/title-block/__image/title-block__image.css);
+@import url(../blocks/title-block/__image/_position/title-block__image_position_two-columns.css);
 
 /** Price **/
 @import url(../blocks/price/price.css);
@@ -46,6 +47,7 @@
 @import url(../blocks/price/__size/price__size.css);
 @import url(../blocks/price/__options/price__options.css);
 @import url(../blocks/price/__option/price__option.css);
+@import url(../blocks/price/__subtitle/price__subtitle.css);
 
 /** Assortment **/
 @import url(../blocks/assortment/assortment.css);

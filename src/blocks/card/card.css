@@ -1,4 +1,5 @@
 .card {
+  width: 100%;
   transition: box-shadow var(--time-transition);
 }
 
