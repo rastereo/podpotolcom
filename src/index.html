@@ -9,7 +9,7 @@
 </head>
 
 <body class="root">
-  <header class="header header_border_none">
+  <header class="header header_border_none emerge" data-duration="1500" data-effect="slide"  data-down="35vh">
     <a href="." class="header__logo link"></a>
     <ul class="header__menu list">
       <li>
@@ -24,14 +24,14 @@
     </ul>
   </header>
   <main>
-    <section class="presentation">
+    <section class="presentation emerge" data-duration="1500" data-effect="zoom">
       <h1 class="title title_size_large">Под потолком</h1>
       <p class="presentation_description">Кровати ручной работы: высокое качество и надёжность</p>
       <a href="#connect" class="presentation__scroll-button link">обсудить проект</a>
       <img src="<%=require('./images/kitchen.jpg')%>" alt="Кровать-чердак на кухне" class="presentation__image">
       <img src="<%=require('./images/kitchen-2.jpg')%>" alt="Белая кровать-чердак" class="presentation__image">
     </section>
-    <section class="assortment">
+    <section class="assortment emerge" data-expose="true" data-duration="1500" data-effect="slide" data-up="35vh">
       <h2 class="title title_size_medium">интерьер на любой вкус</h2>
       <div class="assortment__container">
         <p class="assortment__text">В своей работе мы используем качественные материалы и передовые технологии
@@ -73,7 +73,7 @@
         </a>
       </div>
     </section>
-    <section class="achievement">
+    <section class="achievement emerge" data-expose="true" data-duration="1500" data-effect="slide" data-up="35vh">
       <h2 class="title title_size_medium">почему именно мы</h2>
       <ul class="achievement_numbers list">
         <li>
@@ -118,7 +118,7 @@
         </li>
       </ul>
     </section>
-    <section class="about-us">
+    <section class="about-us emerge" data-expose="true" data-duration="1500" data-effect="slide" data-up="35vh">
       <h2 class="title title_size_medium">о нас</h2>
       <ul class="about-us__texts list">
         <li>
@@ -145,7 +145,8 @@
       </ul>
       <img src="<%=require('./images/woodwork.jpg')%>" alt="Работа по дереву" class="about-us__image">
     </section>
-    <section id="connect" class="request">
+    <section id="connect" class="request emerge" data-expose="true" data-duration="1500" data-effect="slide"
+      data-up="35vh">
       <h2 class="title title_size_small">давайте создавать вместе</h2>
       <div class="request__container">
         <p class="request__description">Выезжаем на замер по Москве и области. Проводим онлайн консультации в регионах
@@ -160,7 +161,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer emerge" data-expose="true" data-duration="1500" data-effect="zoom">
     <div class="footer__contact">
       <a href="tel:79031396791" class="footer__phone link">+7 903 139-67-91</a>
       <a href="mailto:podpotolcom@yandex.ru" class="footer__email link">podpotolcom@yandex.ru</a>

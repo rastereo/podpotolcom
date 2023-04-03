@@ -1,6 +1,8 @@
 import './index.css'
+import '../utils/emerge.js'
 
 import { CountUp } from 'countup.js';
+
 
 const numbers = Array.from(document.querySelectorAll('#number'))
 const input = document.querySelector(".request__input_value_phone");
