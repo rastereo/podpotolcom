@@ -1,5 +1,5 @@
-.request__container {
+.request__label {
+  width: 366px;
   display: flex;
   flex-direction: column;
-  gap: 28px;
 }

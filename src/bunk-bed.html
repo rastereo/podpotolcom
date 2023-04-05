@@ -64,12 +64,14 @@
           <h3 class="price__subtitle">Можем добавить выдвижной ящик:</h3>
           <ul class="price__options list">
             <li>
-              <p class="price__option"><span class="medium">Большой ящик</span> — один во всю длину кровати, может использоваться как для
+              <p class="price__option"><span class="medium">Большой ящик</span> — один во всю длину кровати, может
+                использоваться как для
                 хранения, так и для создания дополнительного спального места.
                 (размер до 20х200х80 см) — 9 700 &#x20bd;/штука</p>
             </li>
             <li>
-              <p class="price__option"><span class="medium">Малый ящик</span> — под кроватью длиной 2 метра поместится 2 таких ящика.
+              <p class="price__option"><span class="medium">Малый ящик</span> — под кроватью длиной 2 метра поместится 2
+                таких ящика.
                 (размер до 20х100х80 см) — 5 000 &#x20bd;/штука</p>
             </li>
           </ul>
@@ -104,7 +106,8 @@
         <h2 class="price__title">Дополнительно</h2>
         <ul class="price__sizes list">
           <li>
-            <p class="price__size"><span class="medium">Полка под кровать</span> — 5 000 &#x20bd; в цвет кровати, габаритные размеры (ВхШхГ) не более 30х200х20 </p>
+            <p class="price__size"><span class="medium">Полка под кровать</span> — 5 000 &#x20bd; в цвет кровати,
+              габаритные размеры (ВхШхГ) не более 30х200х20 </p>
           </li>
         </ul>
         <ul class="price__options list">
@@ -118,14 +121,16 @@
             <p class="price__option">При заказе кровати замер и макет — БЕСПЛАТНО</p>
           </li>
           <li>
-            <p class="price__option">Доставка и сборка за МКАД: в пределах ММК — 2 200 &#x20bd;, в пределах БМК — 3 500 &#x20bd;</p>
+            <p class="price__option">Доставка и сборка за МКАД: в пределах ММК — 2 200 &#x20bd;, в пределах БМК —
+              3 500 &#x20bd;</p>
           </li>
         </ul>
         <div>
           <h3 class="price__subtitle">Мы можем сделать бортик выше стандартного:</h3>
           <ul class="price__options list">
             <li>
-              <p class="price__option">40-60 см — 2000 &#x20bd;, выше 60 см от дна спального места обговаривается индивидуально.</p>
+              <p class="price__option">40-60 см — 2000 &#x20bd;, выше 60 см от дна спального места обговаривается
+                индивидуально.</p>
             </li>
           </ul>
         </div>
@@ -180,17 +185,24 @@
         </a>
       </div>
     </section>
-    <section id="connect" class="request">
+    <section id="connect" class="request emerge" data-expose="true" data-duration="1500" data-effect="slide"
+      data-up="35vh">
       <h2 class="title title_size_small">давайте создавать вместе</h2>
       <div class="request__container">
         <p class="request__description">Выезжаем на замер по Москве и области. Проводим онлайн консультации в регионах
           как произвести самостоятельный замер</p>
-        <form action="#" name="request" method="get" class="request__form">
-          <input type="text" name="name" placeholder="Имя, фамилия" class="request__input request__input_value_name"
-            required>
-          <input type="tel" name="phone" placeholder="+ 7 (___) ___-__-__"
-            class="request__input request__input_value_phone" required>
-          <button type="submit" class="request__button-submit">обсудить проект</button>
+        <form action="#" class="request__form">
+          <label class="request__label">
+            <input type="text" name="name" placeholder="Имя" class="request__input request__input_value_name"
+              minlength="2" maxlength="30" required>
+            <span class="request__error request__error_name_name"></span>
+          </label>
+          <label class="request__label">
+            <input type="tel" name="phone" placeholder="Телефон" class="request__input request__input_value_phone"
+              minlength="17" maxlength="18" required>
+            <span class="request__error request__error_name_phone"></span>
+          </label>
+          <button type="submit" class="request__button-submit">Обсудить проект</button>
         </form>
       </div>
     </section>

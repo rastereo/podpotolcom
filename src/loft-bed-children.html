@@ -162,17 +162,24 @@
         </a>
       </div>
     </section>
-    <section id="connect" class="request">
+    <section id="connect" class="request emerge" data-expose="true" data-duration="1500" data-effect="slide"
+      data-up="35vh">
       <h2 class="title title_size_small">давайте создавать вместе</h2>
       <div class="request__container">
         <p class="request__description">Выезжаем на замер по Москве и области. Проводим онлайн консультации в регионах
           как произвести самостоятельный замер</p>
-        <form action="#" name="request" method="get" class="request__form">
-          <input type="text" name="name" placeholder="Имя, фамилия" class="request__input request__input_value_name"
-            required>
-          <input type="tel" name="phone" placeholder="+ 7 (___) ___-__-__"
-            class="request__input request__input_value_phone" required>
-          <button type="submit" class="request__button-submit">обсудить проект</button>
+        <form action="#" class="request__form">
+          <label class="request__label">
+            <input type="text" name="name" placeholder="Имя" class="request__input request__input_value_name"
+              minlength="2" maxlength="30" required>
+            <span class="request__error request__error_name_name"></span>
+          </label>
+          <label class="request__label">
+            <input type="tel" name="phone" placeholder="Телефон" class="request__input request__input_value_phone"
+              minlength="17" maxlength="18" required>
+            <span class="request__error request__error_name_phone"></span>
+          </label>
+          <button type="submit" class="request__button-submit">Обсудить проект</button>
         </form>
       </div>
     </section>

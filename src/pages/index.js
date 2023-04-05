@@ -1,12 +1,20 @@
 import './index.css'
 import '../utils/emerge.js'
+import '../utils/postmail.js'
 
 import { CountUp } from 'countup.js';
+import { formValidationConfig } from '../utils/formValidationConfig.js';
+import FormValidator from '../components/FormValidator.js';
 
-
-const numbers = Array.from(document.querySelectorAll('#number'))
+const numbers = Array.from(document.querySelectorAll('.number-counter'))
 const input = document.querySelector(".request__input_value_phone");
 const anchors = document.querySelectorAll('a[href*="#"]')
+const requestForm = document.querySelector('.request__form')
+
+const formValidator = new FormValidator(formValidationConfig, requestForm);
+
+formValidator.enableValidation();
+formValidator.resetValidation();
 
 const prefixNumber = (str) => {
   if (str === "7") {

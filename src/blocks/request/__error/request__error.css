@@ -1,0 +1,9 @@
+.request__error {
+  min-height: 40px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--error-color);
+  opacity: 0;
+  transition: opacity var(--transition-time);
+}

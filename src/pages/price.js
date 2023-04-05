@@ -1,6 +1,16 @@
 import './price.css'
+import '../utils/postmail.js'
+
+import { formValidationConfig } from '../utils/formValidationConfig.js';
+import FormValidator from '../components/FormValidator.js';
 
 const input = document.querySelector(".request__input_value_phone");
+const requestForm = document.querySelector('.request__form')
+
+const formValidator = new FormValidator(formValidationConfig, requestForm);
+
+formValidator.enableValidation();
+formValidator.resetValidation();
 
 const prefixNumber = (str) => {
   if (str === "7") {

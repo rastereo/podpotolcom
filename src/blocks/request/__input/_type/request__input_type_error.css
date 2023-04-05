@@ -1,0 +1,4 @@
+.request__input_type_error {
+  color: var(--error-color);
+  border-color: var(--error-color);
+}

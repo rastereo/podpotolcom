@@ -1,0 +1,8 @@
+.request__button-submit_disabled {
+  cursor: default;
+}
+
+.request__button-submit_disabled:hover {
+  background-color: var(--button-background-color);
+  cursor: default;
+}
