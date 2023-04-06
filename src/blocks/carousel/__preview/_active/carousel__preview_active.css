@@ -1,0 +1,3 @@
+.carousel__preview_active {
+  outline: 2px solid var(--popup-preview-outline-color);
+}

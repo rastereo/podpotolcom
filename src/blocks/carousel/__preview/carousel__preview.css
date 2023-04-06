@@ -1,0 +1,4 @@
+.carousel__preview {
+  cursor: pointer;
+  transition: all var(--transition-time);
+}

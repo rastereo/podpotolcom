@@ -1,10 +1,13 @@
 .card {
   width: 100%;
   transition: box-shadow var(--time-transition);
+  cursor: pointer;
 }
 
 .card:hover {
   box-shadow: var(--card-box-shadow-hover);
+  border-color: var(--link-color-hover);
+  color: var(--link-color-hover);
 }
 
 .card:nth-of-type(1) {

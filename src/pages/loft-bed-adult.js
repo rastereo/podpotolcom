@@ -2,15 +2,32 @@ import './loft-bed-adult.css'
 import '../utils/postmail.js'
 
 import { formValidationConfig } from '../utils/formValidationConfig.js';
+import { carouselConfig } from '../utils/carouselConfig';
 import FormValidator from '../components/FormValidator.js';
+import Carousel from '../components/Carousel.js';
+import Popup from '../components/Popup.js'
 
 const input = document.querySelector(".request__input_value_phone");
-const requestForm = document.querySelector('.request__form')
+const requestForm = document.querySelector('.request__form');
+const cardList = document.querySelectorAll('.card');
 
 const formValidator = new FormValidator(formValidationConfig, requestForm);
+const carousel = new Carousel(carouselConfig);
+const popupWithCarousel = new Popup('.popup');
 
 formValidator.enableValidation();
 formValidator.resetValidation();
+
+popupWithCarousel.setEventListeners();
+
+carousel.init();
+
+cardList.forEach(card => {
+
+  card.addEventListener('click', () => {
+    popupWithCarousel.open();
+  })
+})
 
 const prefixNumber = (str) => {
   if (str === "7") {

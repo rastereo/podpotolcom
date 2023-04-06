@@ -1,0 +1,4 @@
+.carousel__section-list {
+  display: flex;
+  transition: 250ms transform ease-in;
+}

@@ -14,9 +14,6 @@ module.exports = {
     loftBedChildren: './src/pages/loft-bed-children.js',
     bunkBed: './src/pages/bunk-bed.js',
     other: './src/pages/other.js',
-    clerk: './src/pages/clerk.js',
-    rostislav: './src/pages/rostislav.js',
-    vladislav: './src/pages/vladislav.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -163,21 +160,6 @@ module.exports = {
       template: './src/other.html',
       filename: 'other.html',
       chunks: ['other']
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/clerk.html',
-      filename: 'clerk.html',
-      chunks: ['clerk']
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/rostislav.html',
-      filename: 'rostislav.html',
-      chunks: ['rostislav']
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/vladislav.html',
-      filename: 'vladislav.html',
-      chunks: ['vladislav']
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({

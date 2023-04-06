@@ -1,0 +1,12 @@
+.carousel__button_type_prev-arrow {
+  background-image: url(../../../../images/prev-arrow-icon.svg);
+  left: -80px;
+}
+
+.carousel__button_type_prev-arrow:hover {
+  background-image: url(../../../../images/prev-arrow-icon-hover.svg);
+}
+
+.carousel__button_type_prev-arrow:active {
+  background-image: url(../../../../images/prev-arrow-icon-active.svg);
+}

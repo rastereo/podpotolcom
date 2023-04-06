@@ -15,6 +15,7 @@
   --error-color: red;
   --price-card-border-color: #000;
   --footer-border-color: #000;
-  --popup-background-color: rgba(0, 0, 0, .8);
+  --popup-background-color: rgba(0, 0, 0, .5);
+  --popup-preview-outline-color: #0007B4;
   --time-transition: .5s;
 }

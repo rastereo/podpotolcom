@@ -1,0 +1,6 @@
+.carousel__preview-image {
+  width: 100px;
+  height: 100px;
+  display: block;
+  object-fit: cover;
+}

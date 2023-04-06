@@ -1,0 +1,12 @@
+.carousel__button_type_next-arrow {
+  background-image: url(../../../../images/next-arrow-icon.svg);
+  right: -80px;
+}
+
+.carousel__button_type_next-arrow:hover {
+  background-image: url(../../../../images/next-arrow-icon-hover.svg);
+}
+
+.carousel__button_type_next-arrow:active {
+  background-image: url(../../../../images/next-arrow-icon-active.svg);
+}

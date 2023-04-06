@@ -1,0 +1,4 @@
+.carousel__section-scroll {
+  flex: 1;
+  overflow: hidden;
+}

@@ -1,0 +1,14 @@
+.carousel__button {
+  width: 30px;
+  height: 60px;
+  border: none;
+  background-color: var(--root-background-color);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 30px 60px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  transition: background-image var(--transition-time);
+}

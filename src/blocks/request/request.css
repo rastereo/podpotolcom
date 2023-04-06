@@ -1,6 +1,9 @@
 .request {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  gap: 0 32px;
+  justify-content: flex-start;
+  /* gap: 0 32px; */
   padding: 132px 0 100px;
 }
+
+
