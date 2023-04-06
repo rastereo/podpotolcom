@@ -18,7 +18,7 @@
 .assortment{padding-top:132px}
 .assortment__container{align-items:end;display:grid;gap:26px 35px;grid-template-columns:40% 1fr 40%;grid-template-rows:135px 1fr 1fr}
 .assortment__text{font-size:20px;font-weight:400;grid-column-end:-1;grid-column-start:2;grid-row-end:2;grid-row-start:1;line-height:1.6;margin:0}
-.card{cursor:pointer;transition:box-shadow var(--time-transition);width:100%}.card:hover{box-shadow:var(--card-box-shadow-hover)}.card:first-of-type{grid-row-end:3;grid-row-start:1}.card:nth-of-type(2){grid-column-end:4;grid-column-start:2;grid-row-end:3;grid-row-start:2}.card:nth-of-type(3){grid-column-end:3;grid-column-start:1;grid-row-end:-1;grid-row-start:3}.card:nth-of-type(4){grid-column-end:-1;grid-column-start:3;grid-row-end:-1;grid-row-start:3}
+.card{cursor:pointer;transition:box-shadow var(--time-transition);width:100%}.card:hover{border-color:var(--link-color-hover);box-shadow:var(--card-box-shadow-hover);color:var(--link-color-hover)}.card:first-of-type{grid-row-end:3;grid-row-start:1}.card:nth-of-type(2){grid-column-end:4;grid-column-start:2;grid-row-end:3;grid-row-start:2}.card:nth-of-type(3){grid-column-end:3;grid-column-start:1;grid-row-end:-1;grid-row-start:3}.card:nth-of-type(4){grid-column-end:-1;grid-column-start:3;grid-row-end:-1;grid-row-start:3}
 .card__image{display:block;-o-object-fit:cover;object-fit:cover;width:100%}
 .card__image_orientation_horizontal{height:529px}
 .card__container{align-items:center;border:1px solid;box-sizing:border-box;display:flex;height:145px;justify-content:center;width:100%}
