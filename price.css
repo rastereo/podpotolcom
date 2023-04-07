@@ -11,9 +11,9 @@
 .title{font-weight:400;line-height:1.2;margin:0;text-transform:uppercase}
 .title_size_large{align-self:center;font-size:90px}
 .title_size_medium{font-size:64px;padding-bottom:20px}
-.title_size_small{font-size:40px;max-width:400px}
+.title_size_small{font-size:30px;width:50%}
 .title-block{padding:100px 0 36px}
-.title-block__description{font-size:20px;font-weight:400;line-height:1.6;margin:0}
+.title-block__description{font-size:16px;font-weight:400;line-height:1.6;margin:0;width:100%}
 .price{display:flex;flex-wrap:wrap;gap:32px;justify-content:center}
 .price__card{border:1px solid var(--price-card-border-color);box-sizing:border-box;display:flex;flex-direction:column;gap:20px 0;min-height:586px;padding:40px;width:48.76%}
 .price__title{font-size:40px;font-weight:400;line-height:1.2;margin:0;text-transform:uppercase}

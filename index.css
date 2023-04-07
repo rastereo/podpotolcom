@@ -10,7 +10,7 @@
 .title{font-weight:400;line-height:1.2;margin:0;text-transform:uppercase}
 .title_size_large{align-self:center;font-size:90px}
 .title_size_medium{font-size:64px;padding-bottom:20px}
-.title_size_small{font-size:40px;max-width:400px}
+.title_size_small{font-size:30px;width:50%}
 .presentation{align-items:end;display:grid;gap:0 32px;grid-template-columns:58% 1fr;grid-template-rows:135px 70px 1fr;padding:90px 0 0;width:100%}
 .presentation_description{align-self:center;font-size:24px;font-weight:400;line-height:1.33;margin:0;max-width:526px}
 .presentation__scroll-button{align-self:start;background-color:var(--button-background-color);color:var(--button-text-color);font-size:24px;font-weight:600;grid-column:2;line-height:1.2;padding:19px 0;text-align:center;text-transform:uppercase;transition:background-color var(--time-transition)}.presentation__scroll-button:focus,.presentation__scroll-button:hover{background-color:var(--button-background-color-hover);color:var(--button-text-color)}.presentation__scroll-button:active{background-color:var(--button-background-color-active)}
