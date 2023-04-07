@@ -15,6 +15,8 @@ export default class Carousel {
   }
 
   _render() {
+    this._offset = 0;
+
     this._slides.forEach((slide, index) => {
       if (index < this._currentIndex) {
         this._offset += slide.offsetWidth;
@@ -94,7 +96,6 @@ export default class Carousel {
 
   init(images, title, name) {
     this._currentIndex = 0;
-    this._offset = 0;
     this._sectionContainer.innerHTML = '';
     this._previewContainer.innerHTML = '';
 
