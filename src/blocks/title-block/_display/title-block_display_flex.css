@@ -1,4 +1,6 @@
 .title-block_display_flex {
+  width: 100%;
   display: flex;
-  gap: 50px;
+  align-items: flex-start;
+  gap: 0px;
 }

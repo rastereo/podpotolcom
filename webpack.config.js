@@ -20,11 +20,11 @@ module.exports = {
     filename: '[name].js',
     publicPath: '',
   },
-  // performance: {
-  //   hints: false,
-  //   maxEntrypointSize: 512000,
-  //   maxAssetSize: 512000
-  // },
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
+  },
   mode: 'development',
   devServer: {
     static: path.resolve(__dirname, './dist'),

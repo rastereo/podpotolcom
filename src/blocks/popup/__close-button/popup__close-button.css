@@ -9,8 +9,8 @@
   border: none;
   cursor: pointer;
   position: absolute;
-  top: 18px;
-  right: 18px;
+  top: 16px;
+  right: 16px;
   transition: background-image var(--transition-time);
 }
 
