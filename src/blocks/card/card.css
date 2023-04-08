@@ -1,6 +1,6 @@
 .card {
   width: 100%;
-  transition: box-shadow var(--time-transition);
+  transition: all var(--time-transition);
   cursor: pointer;
 }
 

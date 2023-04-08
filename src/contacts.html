@@ -9,17 +9,33 @@
 </head>
 
 <body class="root">
-  <header class="header">
+  <header class="header header_border_none emerge" data-duration="1500" data-effect="slide" data-down="35vh">
     <a href="." class="header__logo link"></a>
     <ul class="header__menu list">
       <li>
         <a href="./price.html" class="link">Цены</a>
       </li>
       <li>
-        <a href="#" class="link">Каталог</a>
+        <div class="dropdown">
+          <button type="button" class="dropdown__button">Каталог</button>
+          <ul class="dropdown__menu list">
+            <li>
+              <a href="./loft-bed-adult.html" class="link">Кровать-чердак взрослая</a>
+            </li>
+            <li>
+              <a href="./loft-bed-children.html" class="link">Кровать-чердак детская</a>
+            </li>
+            <li>
+              <a href="./bunk-bed.html" class="link">Двухъярусная кровать</a>
+            </li>
+            <li>
+              <a href="./other.html" class="link">Другая мебель</a>
+            </li>
+          </ul>
+        </div>
       </li>
       <li>
-        <a href="./contacts.html" class="link link_active">Контакты</a>
+        <a href="./contacts.html" class="link_active link">Контакты</a>
       </li>
     </ul>
   </header>
@@ -33,7 +49,7 @@
       <ul class="contact__list list">
         <li>
           <h3 class="contact__title">Работаем ежедневно</h3>
-            <p class="contact__description">с 10.00 до 18.00</p>
+          <p class="contact__description">с 10.00 до 18.00</p>
         </li>
         <li>
           <h3 class="contact__title">Наш телефон</h3>

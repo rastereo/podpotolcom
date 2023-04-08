@@ -9,14 +9,30 @@
 </head>
 
 <body class="root">
-  <header class="header">
+  <header class="header header_border_none emerge" data-duration="1500" data-effect="slide" data-down="35vh">
     <a href="." class="header__logo link"></a>
     <ul class="header__menu list">
       <li>
         <a href="./price.html" class="link">Цены</a>
       </li>
       <li>
-        <a href="#" class="link">Каталог</a>
+        <div class="dropdown">
+          <button type="button" class="dropdown__button">Каталог</button>
+          <ul class="dropdown__menu list">
+            <li>
+              <a href="./loft-bed-adult.html" class="link link_active">Кровать-чердак взрослая</a>
+            </li>
+            <li>
+              <a href="./loft-bed-children.html" class="link">Кровать-чердак детская</a>
+            </li>
+            <li>
+              <a href="./bunk-bed.html" class="link">Двухъярусная кровать</a>
+            </li>
+            <li>
+              <a href="./other.html" class="link">Другая мебель</a>
+            </li>
+          </ul>
+        </div>
       </li>
       <li>
         <a href="./contacts.html" class="link">Контакты</a>
@@ -97,10 +113,8 @@
   <div class="popup">
     <div class="popup__container">
       <section class="title-block title-block_display_flex tittle-block_padding_none">
-        <h1 class="title title_size_small">Кровать&#8209;чердак для взрослых «Клерк»</h1>
-        <p class="title-block__description title-block__description_type_popup">Кровати-чердаки для взрослых, антресоли, второй этаж — названий высоких
-          кроватей с повышенной нагрузкой, великое множество. Мы делаем их все. Расширьте свою комнату, устроив
-          под кроватью кабинет, гардеробную, поставьте диван.</p>
+        <h1 class="title title_size_small"></h1>
+        <p class="title-block__description title-block__description_type_popup"></p>
       </section>
       <div class="carousel">
         <div class="carousel__section-scroll">
@@ -117,8 +131,8 @@
     <article class="price__card">
       <h2 class="price__title"></h2>
       <ul class="price__sizes list"></ul>
-      <ul class="price__options list">
-      </ul>
+      <ul class="price__options list"></ul>
+    </article>
   </template>
   <template id="template-card">
     <article class="card card_size_small">

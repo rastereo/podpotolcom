@@ -1,3 +1,5 @@
 .link_active {
   color: var(--link-color-hover);
+  pointer-events: none;
+  cursor: default;
 }

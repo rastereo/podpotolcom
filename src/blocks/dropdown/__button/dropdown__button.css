@@ -1,0 +1,20 @@
+.dropdown__button {
+  height: 47px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  background-color: var(--root-background-color);
+  display: flex;
+  align-items: center;
+  border: none;
+  margin: 0;
+  padding: 0;
+  transition: color var(--time-transition);
+  z-index: -1;
+}
+
+.dropdown:hover .dropdown__button {
+  color: var(--link-color-hover);
+  display: flex;
+}

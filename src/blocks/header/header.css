@@ -1,6 +1,11 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--root-background-color);
   border-bottom: 1px solid var(--header-border-color);
   padding-bottom: 20px;
+  position: relative;
+  z-index: 2;
 }

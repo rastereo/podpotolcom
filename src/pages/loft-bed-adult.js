@@ -1,9 +1,9 @@
 import './loft-bed-adult.css'
 import '../utils/postmail.js'
 
+import { loftBedAdultData } from '../utils/loftBedAdultData.js';
 import { formValidationConfig } from '../utils/formValidationConfig.js';
 import { carouselConfig } from '../utils/carouselConfig';
-import { loftBedAdultData } from '../utils/loftBedAdultData.js';
 import FormValidator from '../components/FormValidator.js';
 import Content from '../components/content.js';
 import Carousel from '../components/Carousel.js';
@@ -12,7 +12,6 @@ import Element from '../components/Element';
 
 const input = document.querySelector(".request__input_value_phone");
 const requestForm = document.querySelector('.request__form');
-const cardList = document.querySelectorAll('.card');
 
 const formValidator = new FormValidator(formValidationConfig, requestForm);
 const carousel = new Carousel(carouselConfig);
@@ -28,7 +27,7 @@ const content = new Content({
     popupTitle.render(`${title} «${name}»`);
     popupDescription.render(description);
 
-    popupWithCarousel.open();
+    setTimeout(() => popupWithCarousel.open(), 200)
   }
 });
 

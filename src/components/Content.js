@@ -85,6 +85,7 @@ export default class Content {
 
       titleCard.textContent = bed.name;
       imageCard.src = bed.cover;
+      imageCard.alt = `Фото ${this._popupTitle} «${bed.name}»`;
 
       newCard.addEventListener('click', () => {
         this._callback(bed.images, this._popupTitle, bed.name, bed.description);
