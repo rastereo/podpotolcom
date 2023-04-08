@@ -1,3 +1,43 @@
 .achievement__item {
   width: 528px;
+  padding-left: 116px;
+  position: relative;
+}
+
+.achievement__item::before {
+  content: "";
+  width: 96px;
+  height: 96px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 10%;
+  left: 0;
+}
+
+.achievement__item:nth-of-type(1)::before {
+  width: 100px;
+  height: 100px;
+  background-image: url(../../../images/achievement-icons/hammer.svg);
+}
+
+.achievement__item:nth-of-type(2)::before {
+  background-image: url(../../../images/achievement-icons/smile.svg);
+}
+
+.achievement__item:nth-of-type(3)::before {
+  background-image: url(../../../images/achievement-icons/gift.svg);
+}
+
+.achievement__item:nth-of-type(4)::before {
+  background-image: url(../../../images/achievement-icons/clipboard-signature.svg);
+}
+
+.achievement__item:nth-of-type(5)::before {
+  background-image: url(../../../images/achievement-icons/clock-3.svg);
+}
+
+.achievement__item:nth-of-type(6)::before {
+  background-image: url(../../../images/achievement-icons/key.svg)
 }

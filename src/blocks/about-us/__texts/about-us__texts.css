@@ -1,11 +1,10 @@
 .about-us__texts {
-  max-height: 288px;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.6;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 30px 0px;
   padding-bottom: 37px;
 }
