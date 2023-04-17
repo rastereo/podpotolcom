@@ -37,7 +37,7 @@
 .about-us{padding-top:132px}
 .about-us__texts{display:flex;flex-wrap:wrap;font-size:20px;font-weight:400;gap:30px 0;justify-content:space-between;line-height:1.6;padding-bottom:37px}
 .about-us__text{margin:0;max-width:640px}
-.about-us__image{display:block;-o-object-fit:cover;object-fit:cover;width:100%}
+.about-us__image{display:block;max-height:582px;-o-object-fit:cover;object-fit:cover;width:100%}
 .request{display:flex;justify-content:flex-start;padding:132px 0 100px;width:100%}
 .request__container{display:flex;flex-direction:column;gap:28px;max-width:100%}
 .request__description{font-size:20px;font-weight:400;line-height:1.6;margin:0}
