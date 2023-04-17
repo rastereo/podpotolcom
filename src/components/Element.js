@@ -6,5 +6,4 @@ export default class Element {
   render(text) {
     this._container.textContent = text;
   }
-
 }

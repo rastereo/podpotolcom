@@ -1,7 +1,7 @@
 import './loft-bed-children.css'
 import '../utils/postmail.js'
 
-import { loftBedChildrenData } from '../utils/loftBedChildrenData.js';
+import { loftBedChildrenData } from '../utils/data/loftBedChildrenData.js';
 import { formValidationConfig } from '../utils/formValidationConfig.js';
 import { carouselConfig } from '../utils/carouselConfig';
 import FormValidator from '../components/FormValidator.js';

@@ -71,6 +71,14 @@ export default class Content {
         optionContainer.append(this._getListItem(optionText, 'price__option'));
       });
 
+      if (price.optionsPlus) {
+        const optionPluseContainer = newCard.querySelector('.price__options_name_plus');
+
+        price.optionsPlus.forEach(optionPlusText => {
+          optionPluseContainer.append(this._getListItem(optionPlusText, 'price__option'));
+        });
+      }
+
       this._priceContainerElement.append(newCard);
     });
   }

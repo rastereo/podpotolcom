@@ -69,26 +69,77 @@ export const loftBedChildrenData = {
     {
       name: 'Бавария',
       description: 'Нам бы хотелось думать, что бортик этой модели, вам напомнит стиль немецкой архитектуры - фахверк. Набирающая популярность модель у людей следящих за тенденциями в дизайне.',
-      cover: '',
-      images: []
+      cover: 'https://thumb.tildacdn.com/tild6565-3233-4636-b133-633233336538/-/format/webp/21150348_15079618726.jpg',
+      images: [
+        'https://static.tildacdn.com/tild6637-6466-4436-b637-323861613362/3eLFMvDcMNk.jpg',
+        'https://thumb.tildacdn.com/tild3464-6330-4030-b466-633033376336/-/format/webp/22290026_15558223778.jpg',
+        'https://thumb.tildacdn.com/tild6565-3233-4636-b133-633233336538/-/format/webp/21150348_15079618726.jpg',
+        'https://thumb.tildacdn.com/tild6438-6433-4238-b462-316265616534/-/format/webp/67653124_25327854801.jpg',
+        'https://static.tildacdn.com/tild6338-3464-4334-b932-343635306262/68401573_25220559479.jpg',
+        'https://thumb.tildacdn.com/tild3931-6335-4436-b035-316433373736/-/format/webp/WnRhV5yDxAA.jpg',
+        'https://thumb.tildacdn.com/tild3334-3930-4631-b164-613266363936/-/format/webp/67560253_25220557745.jpg',
+        'https://thumb.tildacdn.com/tild3931-3266-4436-b937-383333386539/-/format/webp/26166241_16908655676.jpg',
+        'https://static.tildacdn.com/tild6434-6437-4864-b831-626538373738/IMG_44211.JPG',
+        'https://static.tildacdn.com/tild6166-3233-4239-b139-333565346537/42044750_20471701187.jpg',
+        'https://static.tildacdn.com/tild6163-6634-4465-b062-613862326133/084D390F-1B1E-4795-8.jpeg',
+        'https://static.tildacdn.com/tild3462-3231-4139-b663-643132653332/29597972_18230707178.jpg',
+        'https://static.tildacdn.com/tild6166-3232-4431-b231-373430316538/IMG_44221.JPG',
+        'https://static.tildacdn.com/tild6136-6435-4130-b733-326135333763/35AB72EC-3CC7-4B14-9.jpeg',
+        'https://static.tildacdn.com/tild6266-3530-4230-a231-323536633662/1108D8B6-7565-45CE-B.jpeg',
+        'https://static.tildacdn.com/tild6534-6335-4331-b861-323764383164/50626173_22206972947.jpg',
+        'https://static.tildacdn.com/tild6465-3134-4231-a331-636262653862/IMG_4548.PNG',
+        'https://static.tildacdn.com/tild3266-3439-4536-a238-653136373034/IMG_4549.PNG',
+        'https://static.tildacdn.com/tild3862-6632-4761-b162-366563393735/IMG_4362.PNG',
+      ]
     },
     {
       name: 'Парящая',
       description: 'Вернее было бы назвать её Висящая, т.к. она опирается на стены- висит на них. Сэкономленое место позволяет придвинуть стол или диван, вплотную к стене.',
-      cover: '',
-      images: []
+      cover: 'https://static.tildacdn.com/tild6466-3562-4463-b638-653966643530/V2oWWOyb6s8_1.jpg',
+      images: [
+        'https://thumb.tildacdn.com/tild3031-3632-4362-a230-393332643831/-/format/webp/111111.jpg',
+        'https://thumb.tildacdn.com/tild3365-3839-4236-a162-653032643264/-/cover/360x360/center/center/3eLFMvDcMNk.jpg',
+        'https://thumb.tildacdn.com/tild6661-3937-4231-b963-653036316231/-/cover/360x360/center/center/noroot.jpg',
+        'https://thumb.tildacdn.com/tild3337-6136-4138-a364-636666396232/-/cover/360x360/center/center/iYHyyZh0Sa8.jpg',
+        'https://thumb.tildacdn.com/tild6466-3562-4463-b638-653966643530/-/cover/360x360/center/center/V2oWWOyb6s8_1.jpg',
+        'https://thumb.tildacdn.com/tild3966-3435-4330-b538-363334323633/-/cover/360x360/center/center/oXiyMVsb74Q.jpg',
+        'https://thumb.tildacdn.com/tild3834-6630-4064-b263-326439363933/-/cover/360x360/center/center/21314720_15150259419.jpg',
+        'https://thumb.tildacdn.com/tild3031-3862-4464-a162-396536303964/-/cover/360x360/center/center/21150348_15079618726.jpg',
+        'https://thumb.tildacdn.com/tild6461-3330-4261-a362-666465656163/-/cover/360x360/center/center/IMG_3143.jpg',
+      ]
     },
     {
       name: 'Ростислав',
-      description: 'Модель для любителей четких и прямых линий. Частота расположения деталей борта может быть любой, что позволяет сделать кровать воздушной и в то же время безопасной для ребёнка, при необходимости.',
-      cover: '',
-      images: []
+      description: 'Модель для любителей четких и прямых линий. Частота расположения деталей борта может быть любой, что позволяет сделать кровать воздушной и в то же время безопасной для ребёнка, при необходимости. +1100р к базовой стоимости.',
+      cover: 'https://thumb.tildacdn.com/tild3166-3931-4437-b066-653433623036/-/cover/417x535/center/center/-/format/webp/52914742_22777046623.jpg',
+      images: [
+        'https://thumb.tildacdn.com/tild3664-6136-4630-b933-346566656131/_.jpg',
+        'https://thumb.tildacdn.com/tild6633-3864-4561-b063-373133643164/17353165_12923017242.jpg',
+        'https://thumb.tildacdn.com/tild3364-3030-4065-a637-353736396232/_2.jpg',
+        'https://thumb.tildacdn.com/tild3166-3931-4437-b066-653433623036/52914742_22777046623.jpg',
+        'https://thumb.tildacdn.com/tild6331-3637-4236-a235-613462643232/22555149_15750845092.jpg',
+        'https://thumb.tildacdn.com/tild3631-3164-4031-a362-316535396635/53110763_22777047390.jpg',
+        'https://thumb.tildacdn.com/tild3236-6563-4135-a162-383566613932/78137211_27490330618.jpg',
+        'https://thumb.tildacdn.com/tild6462-6335-4034-a235-356562393837/77202336_27490329385.jpg',
+        'https://thumb.tildacdn.com/tild3037-3864-4433-b431-613462613338/75557459_27017852299.jpg',
+        'https://thumb.tildacdn.com/tild3130-3561-4935-b633-356134363539/rostislav4__.jpg'
+      ]
     },
     {
       name: 'для школьника студента',
       description: 'Кровать - чердак для человека вступающего во взрослую жизнь имеет ряд своих особенностей. Из-за бурного роста, сделать её необходимо на комфортном расстоянии от потолка. Снизу нужно учесть не только необходимый стол для учебы, но и место для хранения письменных принадлежностей, книг, учебников',
-      cover: '',
-      images: []
+      cover: 'https://static.tildacdn.com/tild3533-3263-4433-a363-313635396635/37915540_19709173163.jpg',
+      images: [
+        'https://thumb.tildacdn.com/tild6639-6463-4135-b330-666464663931/Image-1_4.jpg',
+        'https://thumb.tildacdn.com/tild3331-6235-4139-b361-646333613939/31776068_18598965274.jpg',
+        'https://thumb.tildacdn.com/tild6233-3635-4639-b865-636638643932/31230663_18518593382.jpg',
+        'https://thumb.tildacdn.com/tild3836-3336-4539-b864-633431363962/31870542_18598964907.jpg',
+        'https://static.tildacdn.com/tild3533-3263-4433-a363-313635396635/37915540_19709173163.jpg',
+        'https://static.tildacdn.com/tild6662-3531-4131-b365-383339663536/Image-1_5.jpg',
+        'https://static.tildacdn.com/tild3061-6134-4666-b831-653739393239/21751420_15286954405.jpg',
+        'https://static.tildacdn.com/tild3038-3763-4336-b933-376434323664/Image-1_6.jpg',
+        'https://static.tildacdn.com/tild3265-6336-4865-b465-383563656631/37905787_19709172596.jpg',
+      ]
     },
   ]
 }

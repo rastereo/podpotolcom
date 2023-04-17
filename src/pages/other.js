@@ -1,33 +1,44 @@
 import './other.css'
 import '../utils/postmail.js'
 
+import { otherData } from '../utils/data/otherData.js';
 import { formValidationConfig } from '../utils/formValidationConfig.js';
 import { carouselConfig } from '../utils/carouselConfig';
 import FormValidator from '../components/FormValidator.js';
+import Content from '../components/content.js';
 import Carousel from '../components/Carousel.js';
 import Popup from '../components/Popup.js'
+import Element from '../components/Element';
 
 const input = document.querySelector(".request__input_value_phone");
 const requestForm = document.querySelector('.request__form');
-const cardList = document.querySelectorAll('.card');
 
 const formValidator = new FormValidator(formValidationConfig, requestForm);
 const carousel = new Carousel(carouselConfig);
 const popupWithCarousel = new Popup('.popup');
+const popupTitle = new Element('.title_size_small')
+const popupDescription = new Element('.title-block__description_type_popup')
+
+const content = new Content({
+  data: otherData,
+  callback: (images, title, name, description) => {
+    carousel.init(images, title, name);
+
+    popupTitle.render(`${title} «${name}»`);
+    popupDescription.render(description);
+
+    setTimeout(() => popupWithCarousel.open(), 200)
+  }
+});
+
+content.renderMainBlock();
+content.renderPriceCard('#template-price-card', '.price__card', '.price');
+content.renderCards('#template-card', '.card', '.assortment__container');
 
 formValidator.enableValidation();
 formValidator.resetValidation();
 
 popupWithCarousel.setEventListeners();
-
-carousel.init();
-
-cardList.forEach(card => {
-
-  card.addEventListener('click', () => {
-    popupWithCarousel.open();
-  })
-})
 
 const prefixNumber = (str) => {
   if (str === "7") {

@@ -1,6 +1,6 @@
 // https://postmail.invotes.com/
-//https://stackoverflow.com/questions/7381150/how-to-send-an-email-from-javascript
-//update this with your requestForm selector
+// https://stackoverflow.com/questions/7381150/how-to-send-an-email-from-javascript
+// update this with your requestForm selector
 
 const data_js = {
   "access_token": "pzso0zyz60vrrh0fndjv1by8" // лимит в день: 25 писем :(

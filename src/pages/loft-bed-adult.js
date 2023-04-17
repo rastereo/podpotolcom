@@ -1,7 +1,7 @@
 import './loft-bed-adult.css'
 import '../utils/postmail.js'
 
-import { loftBedAdultData } from '../utils/loftBedAdultData.js';
+import { loftBedAdultData } from '../utils/data/loftBedAdultData.js';
 import { formValidationConfig } from '../utils/formValidationConfig.js';
 import { carouselConfig } from '../utils/carouselConfig';
 import FormValidator from '../components/FormValidator.js';
