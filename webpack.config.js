@@ -13,6 +13,7 @@ module.exports = {
     loftBedAdult: './src/pages/loft-bed-adult.js',
     loftBedChildren: './src/pages/loft-bed-children.js',
     bunkBed: './src/pages/bunk-bed.js',
+    tables: './src/pages/tables.js',
     other: './src/pages/other.js',
   },
   output: {
@@ -155,6 +156,11 @@ module.exports = {
       template: './src/bunk-bed.html',
       filename: 'bunk-bed.html',
       chunks: ['bunkBed']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tables.html',
+      filename: 'tables.html',
+      chunks: ['tables']
     }),
     new HtmlWebpackPlugin({
       template: './src/other.html',
