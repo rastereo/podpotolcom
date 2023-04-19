@@ -1,0 +1,8 @@
+.not-found__title {
+  font-size: 380px;
+  font-weight: 400;
+  line-height: 1.21;
+  text-transform: uppercase;
+  color: var(--link-color-hover);
+  margin: 0;
+}

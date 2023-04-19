@@ -15,6 +15,7 @@ module.exports = {
     bunkBed: './src/pages/bunk-bed.js',
     tables: './src/pages/tables.js',
     other: './src/pages/other.js',
+    notFound: './src/pages/404.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -166,6 +167,11 @@ module.exports = {
       template: './src/other.html',
       filename: 'other.html',
       chunks: ['other']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/404.html',
+      filename: '404.html',
+      chunks: ['notFound']
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({

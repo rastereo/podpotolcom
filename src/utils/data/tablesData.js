@@ -1,6 +1,6 @@
 export const tablesData = {
   title: 'Столы',
-  popupTitle: '',
+  popupTitle: 'Письменный стол, стол на одной или 4-х ногах. Для компьютера или в мастерскую. Вы придумываете — мы воплощаем!',
   description: 'Написать описание',
   mainImages: [
     'https://i.ibb.co/vkRqDWS/866.jpg',

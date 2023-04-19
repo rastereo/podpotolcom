@@ -1,0 +1,6 @@
+.not-found {
+  padding: 24px 0 122px;
+  background-image: url(../../images/girl.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
