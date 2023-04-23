@@ -19,24 +19,37 @@ const popupWithCarousel = new Popup('.popup');
 const popupTitle = new Element('.title_size_small')
 const popupDescription = new Element('.title-block__description_type_popup')
 
-const content = new Content({
-  data: loftBedAdultData,
-  callback: (images, title, name, description) => {
-    carousel.init(images, title, name);
+fetch('http://35.158.138.132:51957', {
+  method: 'GET' 
+})
+  .then((response) => (response.json()))
+  .then((data) => {
+    console.log(data)
+    const content = new Content({
+      data: data,
+      callback: (images, title, name, description) => {
+        carousel.init(images, title, name);
+    
+        popupTitle.render(`${title} «${name}»`);
+        popupDescription.render(description);
+    
+        setTimeout(() => popupWithCarousel.open(), 200)
+      }
+    });
+    
+    content.renderMainBlock();
+    content.renderPriceCard('#template-price-card', '.price__card', '.price');
+    content.renderCards('#template-card', '.card', '.assortment__container');
+    
+    formValidator.enableValidation();
+    formValidator.resetValidation();
+  })
+  .catch((err) => {
+    console.log(err)
+  })
 
-    popupTitle.render(`${title} «${name}»`);
-    popupDescription.render(description);
 
-    setTimeout(() => popupWithCarousel.open(), 200)
-  }
-});
 
-content.renderMainBlock();
-content.renderPriceCard('#template-price-card', '.price__card', '.price');
-content.renderCards('#template-card', '.card', '.assortment__container');
-
-formValidator.enableValidation();
-formValidator.resetValidation();
 
 popupWithCarousel.setEventListeners();
 

@@ -32,7 +32,6 @@ export default class Content {
   }
 
   renderMainBlock() {
-    debugger
     this._mainBlockElement = document.querySelector('.title-block');
 
     this._titleElement = this._mainBlockElement.querySelector('.title');
