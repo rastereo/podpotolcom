@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/podpotolcom/static/css/main.307db55f.css",
-    "main.js": "/podpotolcom/static/js/main.4f52742b.js",
+    "main.js": "/podpotolcom/static/js/main.4048c7b5.js",
     "static/js/787.b8554b09.chunk.js": "/podpotolcom/static/js/787.b8554b09.chunk.js",
     "static/media/Inter-Bold.woff2": "/podpotolcom/static/media/Inter-Bold.ec64ea577b0349e055ad.woff2",
     "static/media/Inter-Medium.woff2": "/podpotolcom/static/media/Inter-Medium.293fd13dbca5a3e450ef.woff2",
@@ -32,11 +32,11 @@
     "static/media/clock-3.svg": "/podpotolcom/static/media/clock-3.1a241ecd854caf11fc45.svg",
     "static/media/header-triangle.svg": "/podpotolcom/static/media/header-triangle.d3532e99007a78c07140.svg",
     "main.307db55f.css.map": "/podpotolcom/static/css/main.307db55f.css.map",
-    "main.4f52742b.js.map": "/podpotolcom/static/js/main.4f52742b.js.map",
+    "main.4048c7b5.js.map": "/podpotolcom/static/js/main.4048c7b5.js.map",
     "787.b8554b09.chunk.js.map": "/podpotolcom/static/js/787.b8554b09.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.307db55f.css",
-    "static/js/main.4f52742b.js"
+    "static/js/main.4048c7b5.js"
   ]
 }
