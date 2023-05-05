@@ -1,15 +1,14 @@
 .popup {
   width: 100vw;
   height: 100vh;
-  background-color: var(--popup-background-color);
+  background-color: var(--root-background-color);
   display: flex;
   justify-content: center;
-  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
   visibility: hidden;
   opacity: 0;
-  transition: all var(--time-transition) linear;
+  transition: all .20s linear;
   cursor: pointer;
 }

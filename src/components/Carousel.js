@@ -61,7 +61,7 @@ export default class Carousel {
     if (evt.key === 'ArrowRight') this._next();
   }
 
-  _getListItem(itemClss, imageClass, image, title, name) {
+  _getListItem(itemClss, imageClass, image, name) {
     const itemElement = document.createElement('li');
     const imageElement = document.createElement('img');
 
@@ -69,7 +69,7 @@ export default class Carousel {
     imageElement.classList.add(imageClass);
 
     imageElement.src = image;
-    imageElement.alt = `Фото ${title} ${name}`;
+    imageElement.alt = `Фото кровати ${name}`;
 
     itemElement.append(imageElement);
 
@@ -94,7 +94,7 @@ export default class Carousel {
     document.removeEventListener('keydown', this._keyDown);
   }
 
-  init(images, title, name) {
+  init(images, name) {
     this._currentIndex = 0;
     this._sectionContainer.innerHTML = '';
     this._previewContainer.innerHTML = '';
@@ -102,8 +102,8 @@ export default class Carousel {
     this._removeEventListeners();
 
     images.forEach(image => {
-      const newImage = this._getListItem('carousel__section', 'carousel__image', image, title, name);
-      const newPreviewImage = this._getListItem('carousel__preview', 'carousel__preview-image', image, title, name);
+      const newImage = this._getListItem('carousel__section', 'carousel__image', image, name);
+      const newPreviewImage = this._getListItem('carousel__preview', 'carousel__preview-image', image, name);
 
       this._sectionContainer.append(newImage);
       this._previewContainer.append(newPreviewImage);

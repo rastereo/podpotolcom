@@ -1,7 +1,7 @@
 .price__text {
-  width: 48.76%;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.6;
   margin: 0;
+  padding-bottom: 20px;
 }

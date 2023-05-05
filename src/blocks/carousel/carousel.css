@@ -1,5 +1,9 @@
 .carousel {
   width: 85%;
-  margin-top: 12px;
+  height: 90%;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }

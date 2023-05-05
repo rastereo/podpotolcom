@@ -1,11 +1,9 @@
 .popup__container {
-  width: 75%;
-  max-width: 1088px;
-  background-color: var(--root-background-color);
+  width: 85vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  padding: 36px 30px;
   cursor: default;
-  position: relative;
 }

@@ -1,52 +1,47 @@
 {
-  "name": "podpotolcom",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "webpack --mode production",
-    "dev": "webpack serve",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
-  },
-  "author": "rastereo",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.21.0",
-    "@babel/preset-env": "^7.20.2",
-    "autoprefixer": "^10.4.14",
-    "babel-loader": "^9.1.2",
-    "clean-webpack-plugin": "^4.0.0",
-    "css-loader": "^6.7.3",
-    "cssnano": "^5.1.15",
-    "favicons": "^7.1.1",
-    "favicons-webpack-plugin": "^6.0.0",
-    "gh-pages": "^5.0.0",
-    "html-webpack-plugin": "^5.5.0",
-    "image-minimizer-webpack-plugin": "^3.8.2",
-    "imagemin": "^8.0.1",
-    "imagemin-gifsicle": "^7.0.0",
-    "imagemin-jpegtran": "^7.0.0",
-    "imagemin-mozjpeg": "^10.0.0",
-    "imagemin-optipng": "^8.0.0",
-    "imagemin-pngquant": "^9.0.2",
-    "imagemin-svgo": "^10.0.1",
-    "mini-css-extract-plugin": "^2.7.3",
-    "postcss-loader": "^7.0.2",
-    "webpack": "^5.76.1",
-    "webpack-cli": "^5.0.1",
-    "webpack-dev-server": "^4.11.1"
-  },
+  "name": "podpotolcom-react",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "core-js": "^3.29.0",
-    "countup.js": "^2.6.0"
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.3.6",
+    "react": "^18.2.0",
+    "react-countup": "^6.4.2",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.10.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rastereo/podpotolcom.git"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
-  "bugs": {
-    "url": "https://github.com/rastereo/podpotolcom/issues"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "homepage": "https://github.com/rastereo/podpotolcom#readme"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  },
+  "homepage": "https://rastereo.github.io/podpotolcom/"
 }

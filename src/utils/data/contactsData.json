@@ -1,0 +1,59 @@
+{
+  "title": "Мы делаем для Вас кровати из дерева",
+  "documentTitle": "Контакты",
+  "description": "Мы любим, когда нам пишут или звонят 🙂",
+  "teamImage": "http://placehold.it/640x592",
+  "info": [
+    {
+      "title": "Работаем ежедневно",
+      "describe": "с 10.00 до 18.00"
+    },
+    {
+      "title": "Наш телефон",
+      "describe": "+7 (903) 139-67-91"
+    },
+    {
+      "title": "Мы доступны в Whatsapp и Telegram под именем",
+      "describe": "Podpotolcom"
+    },
+    {
+      "title": "Вы можете написать нам на почту",
+      "describe": "podpotolcom@yandex.ru"
+    },
+    {
+      "title": "Отвечаем во всех социальных сетях, в наших группах",
+      "social": [
+        {
+          "url": "https://vk.com/podpotolcom",
+          "class": "social-links__logo_name_vk"
+        },
+        {
+          "url": "https://ok.ru/podpotolcom",
+          "class": "social-links__logo_name_ok"
+        },
+        {
+          "url": "https://dzen.ru/id/62418a6b08a9cd7376eb2f2b?utm_referer=podpotol.com",
+          "class": "social-links__logo_name_dzen"
+        }
+      ]
+    }
+  ],
+  "teamTitle": "Кто будет работать над вашим проектом:",
+  "team": [
+    {
+      "name": "Имя",
+      "job": "Должность",
+      "image": "http://placehold.it/416"
+    },
+    {
+      "name": "Имя",
+      "job": "Должность",
+      "image": "http://placehold.it/416"
+    },
+    {
+      "name": "Имя",
+      "job": "Должность",
+      "image": "http://placehold.it/416"
+    }
+  ]
+}

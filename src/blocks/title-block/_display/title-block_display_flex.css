@@ -1,6 +1,6 @@
 .title-block_display_flex {
-  width: 100%;
+  width: 85%;
+  height: 100%;
   display: flex;
   align-items: flex-start;
-  gap: 0px;
 }
