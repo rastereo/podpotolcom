@@ -1,6 +1,20 @@
 .footer__sponsor {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  gap: 72px;
+  flex-wrap: wrap;
+  gap: 20px 71px;
+}
+
+@media screen and (max-width: 1250px) {
+  .footer__sponsor {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .footer__sponsor {
+    justify-content: space-between;
+    gap: 0;
+  }
 }

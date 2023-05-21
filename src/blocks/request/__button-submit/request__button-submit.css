@@ -1,5 +1,5 @@
 .request__button-submit {
-  min-width: 355px;
+  width: 360px;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.2;
@@ -8,7 +8,7 @@
   color: var(--button-text-color);
   background-color: var(--button-background-color);
   cursor: pointer;
-  padding: 19px 56px;
+  padding: 19px;
   transition: background-color var(--time-transition);
 }
 
@@ -22,4 +22,18 @@
 
 .request__button-submit:active {
   background-color: var(--button-background-color-active);
+}
+
+@media screen and (max-width: 855px) {
+  .request__button-submit {
+    width: 344px;
+    font-size: 20px;
+    padding: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .request__button-submit {
+    width: 100%;
+  }
 }

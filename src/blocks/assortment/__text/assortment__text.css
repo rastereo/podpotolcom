@@ -9,3 +9,20 @@
   grid-row-start: 1;
   grid-row-end: 2;
 }
+
+@media screen and (max-width: 768px) {
+  .assortment__text {
+    font-size: 16px;
+    line-height: 1.5;
+    display: block;
+    width: 100%;
+    padding-top: 12px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .assortment__text {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+}

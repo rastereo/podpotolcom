@@ -6,7 +6,7 @@ function AboutUs(props) {
       <h2 className='title title_size_medium'>{props.title}</h2>
       <ul className='about-us__texts list'>
         {props.texts.map((text, index) => (
-          <li key={index}>
+          <li className="about-us__item" key={index}>
             <p className='about-us__text'>{text}</p>
           </li>
         ))}

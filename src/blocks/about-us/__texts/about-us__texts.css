@@ -8,3 +8,21 @@
   gap: 30px 0px;
   padding-bottom: 37px;
 }
+
+@media screen and (max-width: 768px) {
+  .about-us__texts {
+    font-size: 16px;
+    line-height: 1.5;
+    gap: 8px 0px;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .about-us__texts {
+    flex-direction: column;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+}
+

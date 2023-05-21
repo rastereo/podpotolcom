@@ -15,3 +15,17 @@
 .header__logo:active {
   background-image: url(../../../images/logo-podpotolcom.svg);
 }
+
+@media screen and (max-width: 768px) {
+  .header__logo {
+    width: 53px;
+    height: 37px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header__logo {
+    width: 26px;
+    height: 19px;
+  }
+}

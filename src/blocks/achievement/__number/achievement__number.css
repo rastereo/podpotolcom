@@ -1,5 +1,4 @@
 .achievement__number {
-  min-width: 200px;
   font-weight: 500;
   font-size: 128px;
   line-height: 1.21;
@@ -7,3 +6,16 @@
   text-align: center;
   margin: 0;
 }
+
+@media screen and (max-width: 1080px) {
+  .achievement__number {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .achievement__number {
+    font-size: 36px;
+  }
+}
+

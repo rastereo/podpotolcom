@@ -4,3 +4,15 @@
   flex-direction: column;
   gap: 28px;
 }
+
+@media screen and (max-width: 768px) {
+  .request__container {
+    gap: 24px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .request__container {
+    gap: 20px;
+  }
+}

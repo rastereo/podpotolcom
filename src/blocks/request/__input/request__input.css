@@ -13,3 +13,20 @@
   color: var(--input-text-color);
 }
 
+@media screen and (max-width: 900px) {
+  .request__input {
+    padding: 16px 20px;
+  }
+
+  .request__input::placeholder {
+    font-size: 18px;
+    line-height: 1.78;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .request__input {
+    text-align: center;
+    padding: 8px;
+  }
+}

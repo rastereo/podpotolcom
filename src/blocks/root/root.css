@@ -13,3 +13,17 @@
 
   background-color: var(--root-background-color);
 }
+
+@media screen and (max-width: 768px) {
+  .root {
+    padding: 16px 28px 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .root {
+    padding: 8px 6px 0;
+  }
+}
+
+

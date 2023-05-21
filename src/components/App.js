@@ -6,7 +6,7 @@ import axios from 'axios';
 // import priceData from '../utils/data/priceData.json'
 // import contactsData from '../utils/data/contactsData.json'
 // import loftBedAdultData from '../utils/data/loftBedAdultData.json'
-import tablesData from '../utils/data/tablesData.json'
+// import tablesData from '../utils/data/tablesData.json'
 
 import ScrollToTop from '../hooks/ScrollToTop';
 
@@ -29,13 +29,6 @@ function App() {
   const [tablesContent, setTablesContent] = useState(null)
   const [otherContent, setOtherContent] = useState(null)
   const [error, setError] = useState(null)
-
-  // useEffect(() => {
-  //   setMainContent(mainData)
-  //   setPriceContent(priceData)
-  //   setContactsContent(contactsData)
-  //   setLoftBedAdultContent(loftBedAdultData)
-  // }, [])
 
   useEffect(() => {
     axios('https://podpotolkom.transcendent.app/mainData')
@@ -62,11 +55,9 @@ function App() {
       .then((res) => setBunkBedContent(res.data))
       .catch((err) => setError(err.message))
 
-    // axios('https://podpotolkom.transcendent.app/tablesData')
-    //   .then((res) => setTablesContent(res.data))
-    //   .catch((err) => setError(err.message))
-
-    setTablesContent(tablesData)
+    axios('https://podpotolkom.transcendent.app/tablesData')
+      .then((res) => setTablesContent(res.data))
+      .catch((err) => setError(err.message))
 
     axios('https://podpotolkom.transcendent.app/otherData')
       .then((res) => setOtherContent(res.data))

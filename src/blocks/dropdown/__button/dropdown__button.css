@@ -18,3 +18,9 @@
   color: var(--link-color-hover);
   display: flex;
 }
+
+@media screen and (max-width: 768px) {
+  .dropdown__button {
+    font-size: 24px;
+  }
+}

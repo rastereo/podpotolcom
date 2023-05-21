@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Presentation from '../components/Presentation';
 import Assortment from '../components/Assortment';
 import Achievement from '../components/Achievement';
@@ -32,7 +33,7 @@ function Home(props) {
         texts={props.content.aboutUs.texts}
         image={props.content.aboutUs.image}
       />
-      <Request />
+      <Request page={props.content.documentTitle}/>
       <ScrollAnchor />
     </main>
   );

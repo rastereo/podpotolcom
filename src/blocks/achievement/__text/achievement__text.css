@@ -5,3 +5,15 @@
   text-align: center;
   margin: 0;
 }
+
+@media screen and (max-width: 1080px) {
+  .achievement__text {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .achievement__text {
+    font-size: 10px;
+  }
+}

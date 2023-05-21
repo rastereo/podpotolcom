@@ -4,3 +4,18 @@
   line-height: 1.6;
   margin: 0;
 }
+
+@media screen and (max-width: 1080px) {
+  .achievement__description {
+    font-size: 14px;
+    line-height: 1.40;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .achievement__description {
+    font-size: 12px;
+    line-height: 1.40;
+    text-align: center;
+  }
+}

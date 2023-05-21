@@ -67,3 +67,17 @@
 .social-links__logo_name_dzen:focus {
   background-image: url(../../../images/social/dzen-logo-hover.svg);
 }
+
+@media screen and (max-width: 768px) {
+  .social-links__logo {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .social-links__logo {
+    width: 36px;
+    height: 36px;
+  }
+}

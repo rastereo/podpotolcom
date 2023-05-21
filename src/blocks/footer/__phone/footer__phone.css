@@ -4,3 +4,18 @@
   line-height: .8;
   margin-bottom: 28px;
 }
+
+@media screen and (max-width: 768px) {
+  .footer__phone {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .footer__phone {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+}

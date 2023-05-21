@@ -6,4 +6,18 @@
   border-bottom: 1px solid var(--header-border-color);
   padding-bottom: 20px;
   position: relative;
+  z-index: 2;
+  background-color: var(--root-background-color);
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    padding-bottom: 8px;
+  }
 }

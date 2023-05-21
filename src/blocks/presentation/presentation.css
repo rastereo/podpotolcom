@@ -7,3 +7,26 @@
   gap: 0 32px;
   padding: 90px 0 0;
 }
+
+@media screen and (max-width: 768px) {
+  .presentation {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content max-content max-content 484px;
+    gap: 24px;
+    padding: 40px 0 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .presentation {
+    gap: 12px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .presentation {
+    grid-template-rows: max-content max-content max-content max-content;
+    align-items: start;
+    height: 100%;
+  }
+}

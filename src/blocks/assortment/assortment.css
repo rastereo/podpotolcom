@@ -1,3 +1,15 @@
 .assortment {
   padding-top: 132px;
 }
+
+@media screen and (max-width: 768px) {
+  .assortment {
+    padding-top: 80px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .assortment {
+    padding-top: 36px;
+  }
+}

@@ -2,8 +2,22 @@
   width: 100%;
   display: flex;
   justify-content: flex-start;
-  /* gap: 0 32px; */
+  gap: 0 10px;
   padding: 132px 0 100px;
 }
+
+@media screen and (max-width: 900px) {
+  .request {
+    flex-direction: column;
+    padding: 80px 0 52px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .request {
+    padding: 36px 0 40px;
+  }
+}
+
 
 

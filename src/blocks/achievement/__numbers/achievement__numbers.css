@@ -6,3 +6,16 @@
   margin: auto;
   padding: 32px 0 110px;
 }
+
+@media screen and (max-width: 1080px) {
+  .achievement_numbers {
+    max-width: 100%;
+    padding: 32px 0 45px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .achievement_numbers {
+    padding: 28px 0 42px;
+  }
+}

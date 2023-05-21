@@ -6,3 +6,22 @@
   text-transform: uppercase;
   margin: 0;
 }
+
+@media screen and (max-width: 934px) {
+  .footer__title {
+    max-width: 100%;
+    font-size: 20px;
+    line-height: 1.3;
+  }
+}
+@media screen and (max-width: 837px) {
+  .footer__title {
+    max-width: 160px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer__title {
+    line-height: 1.2;
+  }
+}

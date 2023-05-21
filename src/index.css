@@ -19,13 +19,22 @@
 
 /** Header **/
 @import url(./blocks/header/header.css);
+@import url(./blocks/header/header/_fix/header_fix.css);
 @import url(./blocks/header/__logo/header__logo.css);
 @import url(./blocks/header/__menu/header__menu.css);
+@import url(./blocks/header/__navigation/header__navigation.css);
+@import url(./blocks/header/__navigation/_active/header__navigation_active.css);
 
 /** Dropdown **/
 @import url(./blocks/dropdown/dropdown.css);
 @import url(./blocks/dropdown/__button/dropdown__button.css);
 @import url(./blocks/dropdown/__menu/dropdown__menu.css);
+
+/* Hamburger-react */
+@import url(./blocks/hamburger-react/hamburger-react.css);
+
+/* Main **/
+@import url(./blocks/main/_hide/main_hide.css);
 
 /** Title **/
 @import url(./blocks/title/title.css);
@@ -90,6 +99,7 @@
 
 /** About-us **/
 @import url(./blocks/about-us/about-us.css);
+@import url(./blocks/about-us/__item/about-us__item.css);
 @import url(./blocks/about-us/__texts/about-us__texts.css);
 @import url(./blocks/about-us/__text/about-us__text.css);
 @import url(./blocks/about-us/__image/about-us__image.css);
@@ -166,4 +176,3 @@
 @import url(./blocks/carousel/__preview/carousel__preview.css);
 @import url(./blocks/carousel/__preview/_active/carousel__preview_active.css);
 @import url(./blocks/carousel/__preview-image/carousel__preview-image.css);
-

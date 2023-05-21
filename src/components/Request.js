@@ -1,64 +1,46 @@
-import React from 'react';
-import { formValidationConfig } from '../utils/formValidationConfig.js';
-import FormValidator from '../components/FormValidator.js';
-import Postmail from '../hooks/Postmail.js';
+import { useState } from 'react';
 
-function Request() {
-  React.useEffect(() => {
-    const input = document.querySelector('.request__input_value_phone');
-    const requestForm = document.querySelector('.request__form')
-    const formValidator = new FormValidator(formValidationConfig, requestForm);
+import { useFormAndValidation } from '../hooks/useFormAndValidation';
 
-    formValidator.enableValidation();
-    formValidator.resetValidation();
+function Request(props) {
+  const [name, setName] = useState('')
+  const [phone, setPhone] = useState('')
 
-    const prefixNumber = (str) => {
-      if (str === '7') {
-        return '7 (';
-      }
-      if (str === '8') {
-        return '8 (';
-      }
-      if (str === '9') {
-        return '7 (9';
-      }
-      return '7 (';
-    };
+  const { handleChangeValidation, errors, isValid } = useFormAndValidation();
 
-    input.addEventListener('input', (e) => {
-      const value = input.value.replace(/\D+/g, '');
-      const numberLength = 11;
+  function sendMessage(name, phone) {
+    fetch('https://podpotolkom.transcendent.app/send_notification_tg', {
+      method: 'POST',
+      headers: {
+        'accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: name,
+        phone: phone,
+        page: props.page
+      })
+    })
+    .then((res) => console.log(res.status))
+  }
 
-      let result;
-      if (input.value.includes('+8') || input.value[0] === '8') {
-        result = '';
-      } else {
-        result = '+';
-      }
+  function handleSubmit(evt) {
+    evt.preventDefault();
 
-      for (let i = 0; i < value.length && i < numberLength; i++) {
-        switch (i) {
-          case 0:
-            result += prefixNumber(value[i]);
-            continue;
-          case 4:
-            result += ') ';
-            break;
-          case 7:
-            result += '-';
-            break;
-          case 9:
-            result += '-';
-            break;
-          default:
-            break;
-        }
-        result += value[i];
-      }
+    sendMessage(name, phone)
+  }
 
-      input.value = result;
-    });
-  });
+  function handleChangeName(evt) {
+    setName(evt.target.value);
+
+    handleChangeValidation(evt)
+  }
+
+  function handleChangePhone(evt) {
+    setPhone(evt.target.value)
+
+    handleChangeValidation(evt)
+  }
 
   return (
     <section id='connect' className='request'>
@@ -66,7 +48,11 @@ function Request() {
       <div className='request__container'>
         <p className='request__description'>Выезжаем на замер по Москве и области. Проводим онлайн консультации в регионах
           как произвести самостоятельный замер</p>
-        <form action='#' className='request__form'>
+        <form
+          action='#'
+          className='request__form'
+          onSubmit={handleSubmit}
+        >
           <label className='request__label'>
             <input
               type='text'
@@ -74,27 +60,55 @@ function Request() {
               placeholder='Имя'
               minLength='2'
               maxLength='30'
-              className='request__input request__input_value_name'
+              className={`
+                request__input
+                request__input_value_name
+                ${errors.name && 'request__input_type_error'}
+              `}
               required
+              onChange={handleChangeName}
             />
-            <span className='request__error request__error_name_name'></span>
+            <span
+              className={`
+                request__error
+                request__error_name_name
+                ${errors.name && 'request__error_visible'}
+              `}
+            >
+              {errors.name}
+            </span>
           </label>
           <label className='request__label'>
             <input
               type='tel'
               name='phone'
               placeholder='Телефон'
-              minLength='17'
-              maxLength='18'
-              className='request__input request__input_value_phone'
+              minLength='11'
+              maxLength='30'
+              className={`request__input request__input_value_phone ${errors.phone && 'request__input_type_error'}`}
               required
+              onChange={handleChangePhone}
             />
-            <span className='request__error request__error_name_phone'></span>
+            <span
+              className={`
+                request__error
+                request__error_name_phone
+                ${errors.phone && 'request__error_visible'}
+              `}
+            >
+              {errors.phone}
+            </span>
           </label>
-          <button type='submit' className='request__button-submit'>Обсудить проект</button>
+          <button
+            type='submit'
+            className={`
+              request__button-submit
+              ${!isValid && 'request__button-submit_disabled'}
+            `}
+            disabled={!isValid}
+          >Обсудить проект</button>
         </form>
       </div>
-      <Postmail />
     </section>
   );
 }

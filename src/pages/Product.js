@@ -45,7 +45,7 @@ function Product(props) {
         beds={props.content.beds}
         handleClickCard={handleClickCard}
       />
-      <Request />
+      <Request page={props.content.documentTitle} />
       {popupContet != null &&
         <PopupWithCarousel
           title={props.content.popupTitle}

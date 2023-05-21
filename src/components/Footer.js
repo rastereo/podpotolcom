@@ -5,8 +5,18 @@ function Footer() {
   return (
     <footer className='footer'>
       <div className='footer__contact'>
-        <Link to='tel:79031396791' className='footer__phone link'>+7 903 139-67-91</Link>
-        <Link to='mailto:podpotolcom@yandex.ru' className='footer__email link'>podpotolcom@yandex.ru</Link>
+        <Link
+          to='tel:79031396791'
+          className='footer__phone link'
+        >
+          +7 903 139-67-91
+        </Link>
+        <Link
+          to='mailto:podpotolcom@yandex.ru'
+          className='footer__email link'
+        >
+          podpotolcom@yandex.ru
+        </Link>
         <ul className='social-links list'>
           <li>
             <Link

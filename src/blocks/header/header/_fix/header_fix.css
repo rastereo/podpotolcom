@@ -1,0 +1,15 @@
+.header_fix {
+  position: fixed;
+  left: 28px;
+  right: 28px;
+  height: 100%;
+  align-content: flex-start;
+  background-color: var(--root-background-color);
+}
+
+@media screen and (max-width: 320px) {
+  .header_fix {
+    left: 6px;
+    right: 6px;
+  }
+}

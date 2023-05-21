@@ -15,3 +15,17 @@
 .footer__logo-moscow:focus {
   background-image: url(../../../images/made-in-moscow-logo-hover.svg);
 }
+
+@media screen and (max-width: 768px) {
+  .footer__logo-moscow {
+    width: 88px;
+    height: 103.44px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer__logo-moscow {
+    width: 60.43px;
+    height: 71.04px;
+  }
+}

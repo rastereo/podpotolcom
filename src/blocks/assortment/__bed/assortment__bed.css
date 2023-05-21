@@ -1,3 +1,7 @@
+.assortment__bed {
+  height: 100%;
+}
+
 .assortment__bed:nth-of-type(1) {
   grid-column-start: 1;
   grid-column-end: 2;
@@ -25,3 +29,16 @@
   grid-row-start: 3;
   grid-row-end: -1;
 }
+
+@media screen and (max-width: 1100px) {
+  .assortment__bed {
+    width: 48%;
+    height: 100%;
+  }
+}
+
+/* @media screen and (max-width: 450px) {
+  .assortment__bed {
+    width: 45%;
+  }
+} */
