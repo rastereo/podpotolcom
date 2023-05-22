@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/podpotolcom/static/css/main.55497466.css",
+    "main.css": "/podpotolcom/static/css/main.13b19733.css",
     "main.js": "/podpotolcom/static/js/main.c386aa8a.js",
     "static/js/787.b8554b09.chunk.js": "/podpotolcom/static/js/787.b8554b09.chunk.js",
     "static/media/Inter-Bold.woff2": "/podpotolcom/static/media/Inter-Bold.ec64ea577b0349e055ad.woff2",
@@ -40,12 +40,12 @@
     "static/media/next-arrow-icon-hover.svg": "/podpotolcom/static/media/next-arrow-icon-hover.a39606d73fff512e5952.svg",
     "static/media/prev-arrow-icon.svg": "/podpotolcom/static/media/prev-arrow-icon.2e7f9424521d55efc99a.svg",
     "static/media/next-arrow-icon.svg": "/podpotolcom/static/media/next-arrow-icon.af7b68dc4ba47115ef17.svg",
-    "main.55497466.css.map": "/podpotolcom/static/css/main.55497466.css.map",
+    "main.13b19733.css.map": "/podpotolcom/static/css/main.13b19733.css.map",
     "main.c386aa8a.js.map": "/podpotolcom/static/js/main.c386aa8a.js.map",
     "787.b8554b09.chunk.js.map": "/podpotolcom/static/js/787.b8554b09.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.55497466.css",
+    "static/css/main.13b19733.css",
     "static/js/main.c386aa8a.js"
   ]
 }
