@@ -1,5 +1,4 @@
 .price__options {
   display: flex;
   flex-direction: column;
-  gap: 6px 0;
 }

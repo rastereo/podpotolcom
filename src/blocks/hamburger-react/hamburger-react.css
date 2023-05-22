@@ -1,5 +1,6 @@
 .hamburger-react {
   display: none;
+  width: 200px;
 }
 
 @media screen and (max-width: 768px) {

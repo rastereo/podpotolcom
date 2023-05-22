@@ -5,3 +5,10 @@
   line-height: 1.6;
   margin: 0;
 }
+
+@media screen and (max-width: 450px) {
+  .title-block__description {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+}

@@ -3,3 +3,9 @@
   flex-direction: column;
   gap: 12px 0;
 }
+
+@media screen and (max-width: 768px) {
+  .price__sizes {
+    gap: 8px 0;
+  }
+}

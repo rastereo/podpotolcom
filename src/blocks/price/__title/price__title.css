@@ -5,3 +5,16 @@
   text-transform: uppercase;
   margin: 0;
 }
+
+@media screen and (max-width: 1150px) {
+  .price__title {
+    font-size: 3.5vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .price__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

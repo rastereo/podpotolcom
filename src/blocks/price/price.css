@@ -1,6 +1,19 @@
 .price {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 32px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .price {
+    gap: 24px 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .price {
+    gap: 12px 0;
+    flex-direction: column;
+  }
 }

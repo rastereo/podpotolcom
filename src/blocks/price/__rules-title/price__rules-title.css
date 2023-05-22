@@ -5,3 +5,22 @@
   margin: 0;
   padding-bottom: 36px;
 }
+
+@media screen and (max-width: 1150px) {
+  .price__rules-title {
+    font-size: 2.1vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .price__rules-title {
+    padding-bottom: 12px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .price__rules-title {
+    font-size: 16px;
+    line-height: 32px;
+  }
+}

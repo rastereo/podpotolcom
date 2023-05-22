@@ -4,3 +4,16 @@
   line-height: 1.6;
   margin: 0;
 }
+
+@media screen and (max-width: 1150px) {
+  .price__option {
+    font-size: 1.23vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .price__option {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+}

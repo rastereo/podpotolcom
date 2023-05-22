@@ -1,5 +1,5 @@
 .price__card {
-  width: 48.76%;
+  width: 48.7%;
   min-height: 586px;
   box-sizing: border-box;
   border: 1px solid var(--price-card-border-color);
@@ -8,3 +8,31 @@
   gap: 20px 0;
   padding: 40px;
 }
+
+@media screen and (max-width: 1000px) {
+  .price__card {
+    min-height: 271px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .price__card {
+    min-height: 271px;
+    padding: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .price__card {
+    gap: 16px 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .price__card {
+    width: 100%;
+    min-height: 0;
+    gap: 12px 0;
+  }
+}
+

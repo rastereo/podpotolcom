@@ -20,7 +20,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 450px) {
   .root {
     padding: 8px 6px 0;
   }
