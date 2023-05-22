@@ -12,10 +12,10 @@
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
   .footer__phone {
     font-size: 20px;
     line-height: 1.6;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
   }
 }

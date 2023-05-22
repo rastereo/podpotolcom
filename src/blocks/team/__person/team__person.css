@@ -4,5 +4,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 8px;
   padding: 28px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .team__person {
+    padding: 20px 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .team__person {
+    padding: 12px 0;
+    gap: 0;
+  }
 }

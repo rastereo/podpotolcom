@@ -24,7 +24,7 @@
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
   .request__input {
     text-align: center;
     padding: 8px;

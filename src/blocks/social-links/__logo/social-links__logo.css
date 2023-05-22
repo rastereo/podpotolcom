@@ -75,9 +75,9 @@
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
   .social-links__logo {
-    width: 36px;
-    height: 36px;
+    width: 28px;
+    height: 28px;
   }
 }

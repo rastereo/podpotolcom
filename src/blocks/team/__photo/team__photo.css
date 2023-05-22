@@ -4,3 +4,15 @@
   display: block;
   object-fit: cover;
 }
+
+@media screen and (max-width: 768px) {
+  .team__photo {
+    height: 308px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .team__photo {
+    height: 184px;
+  }
+}

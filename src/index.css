@@ -155,6 +155,7 @@
 
 /** Social-links **/
 @import url(./blocks/social-links/social-links.css);
+@import url(./blocks/social-links/_small/social-links_small.css);
 @import url(./blocks/social-links/__logo/social-links__logo.css);
 
 /** Popup **/

@@ -9,7 +9,12 @@
 @media screen and (max-width: 1058px) {
   .social-links {
     width: 100%;
-    justify-content: space-between;
     gap: 0;
+  }
+}
+
+@media screen and (max-width: 1058px) {
+  .social-links {
+    width: 80%;
   }
 }

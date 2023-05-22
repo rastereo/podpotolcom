@@ -1,0 +1,11 @@
+.social-link_size_small {
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 10px 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .social-link_size_small{
+    gap: 5px 24px;
+  }
+}

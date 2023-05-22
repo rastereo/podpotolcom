@@ -5,3 +5,23 @@
   margin: 0;
   padding-bottom: 15px;
 }
+
+@media screen and (max-width: 1150px) {
+  .contact__title {
+    font-size: 1.76vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact__title {
+    padding-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contact__title {
+    font-size: 12px;
+    line-height: 1.4;
+    padding-bottom: 4px;
+  }
+}

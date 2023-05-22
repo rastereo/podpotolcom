@@ -1,5 +1,5 @@
 .request__button-submit {
-  width: 360px;
+  width: 49%;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.2;
@@ -9,7 +9,7 @@
   background-color: var(--button-background-color);
   cursor: pointer;
   padding: 19px;
-  transition: background-color var(--time-transition);
+  transition: all var(--time-transition);
 }
 
 .request__button-submit:hover {
@@ -24,15 +24,14 @@
   background-color: var(--button-background-color-active);
 }
 
-@media screen and (max-width: 855px) {
+@media screen and (max-width: 1160px) {
   .request__button-submit {
-    width: 344px;
     font-size: 20px;
     padding: 16px;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .request__button-submit {
     width: 100%;
   }

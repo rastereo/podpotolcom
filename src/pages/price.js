@@ -10,7 +10,7 @@ function Price(props) {
       <DocumentTitle title={props.content.documentTitle} />
       <TitleBlock title={props.content.title} description={props.content.description} />
       <PriceCards  prices={props.content.prices} rules={props.content.rules}  />
-      <Request />
+      <Request page={props.content.documentTitle} />
     </main>
   );
 }

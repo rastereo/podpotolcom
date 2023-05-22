@@ -4,12 +4,12 @@
 
 @media screen and (max-width: 768px) {
   .title-block {
-    padding: 40px 0 60px;
+    padding: 40px 0 20px;
   }
 }
 
 @media screen and (max-width: 450px) {
   .title-block {
-    padding: 20px 0 36px;
+    padding: 20px 0;
   }
 }

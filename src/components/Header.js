@@ -4,22 +4,28 @@ import { Squash as Hamburger } from 'hamburger-react'
 
 function Header(props) {
   const [isOpen, setOpen] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
 
-  const mobileWindowWidth = 420;
+  const mobileWindowWidth = 450;
 
   const setActiveLink = ({ isActive, isPending }) => isPending ? 'pending' : isActive ? 'link link_active' : 'link';
 
   function hideMain(isOpen) {
     const main = document.querySelector('main');
+    const footer = document.querySelector('footer')
 
-    if (window.innerWidth < mobileWindowWidth && isOpen) {
+    setWindowWidth(window.innerWidth);
+
+    if (windowWidth < mobileWindowWidth && isOpen) {
       main.classList.remove('main_hide')
 
       setOpen(false)
     } else if (!isOpen) {
       main.classList.add('main_hide')
+      footer.classList.add('main_hide')
     } else {
       main.classList.remove('main_hide')
+      footer.classList.remove('main_hide')
     }
   }
 
@@ -44,7 +50,7 @@ function Header(props) {
           setOpen(!isOpen);
           hideMain(isOpen);
         }}
-        size={window.innerWidth > 450 ? 44 : 20}
+        size={windowWidth > mobileWindowWidth ? 44 : 20}
         direction="right"
       />
       <nav className={`header__navigation ${isOpen && 'header__navigation_active'}`}>

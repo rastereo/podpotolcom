@@ -13,7 +13,7 @@ function Contact(props) {
               <p className='contact__description'>{item.describe}</p>
             }
             {item.social &&
-              <ul className='social-links list'>
+              <ul className='social-links social-link_size_small list'>
                 {item.social.map((item, index) => (
                   <li key={index}>
                     <Link

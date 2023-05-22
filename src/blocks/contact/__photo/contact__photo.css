@@ -1,4 +1,17 @@
 .contact__photo {
   display: block;
   max-width: 50%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .contact__photo {
+    max-width: 49%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contact__photo {
+    max-width: 100%;
+  }
 }

@@ -4,7 +4,7 @@ import axios from 'axios';
 
 // import mainData from '../utils/data/mainData.json'
 // import priceData from '../utils/data/priceData.json'
-// import contactsData from '../utils/data/contactsData.json'
+import contactsData from '../utils/data/contactsData.json'
 // import loftBedAdultData from '../utils/data/loftBedAdultData.json'
 // import tablesData from '../utils/data/tablesData.json'
 
@@ -39,9 +39,11 @@ function App() {
       .then((res) => setPriceContent(res.data))
       .catch((err) => setError(err.message))
 
-    axios('https://podpotolkom.transcendent.app/contactsData')
-      .then((res) => setContactsContent(res.data))
-      .catch((err) => setError(err.message))
+    // axios('https://podpotolkom.transcendent.app/contactsData')
+    //   .then((res) => setContactsContent(res.data))
+    //   .catch((err) => setError(err.message))
+
+    setContactsContent(contactsData)
 
     axios('https://podpotolkom.transcendent.app/loftBedAdultData')
       .then((res) => setLoftBedAdultContent(res.data))

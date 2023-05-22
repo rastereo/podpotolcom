@@ -33,7 +33,7 @@ function Home(props) {
         texts={props.content.aboutUs.texts}
         image={props.content.aboutUs.image}
       />
-      <Request page={props.content.documentTitle}/>
+      <Request page={props.content.documentTitle} />
       <ScrollAnchor />
     </main>
   );

@@ -6,7 +6,7 @@ function Request(props) {
   const [name, setName] = useState('')
   const [phone, setPhone] = useState('')
 
-  const { handleChangeValidation, errors, isValid } = useFormAndValidation();
+  const { handleChangeValidation, errors, isValid, resetForm } = useFormAndValidation();
 
   function sendMessage(name, phone) {
     fetch('https://podpotolkom.transcendent.app/send_notification_tg', {
@@ -21,7 +21,12 @@ function Request(props) {
         page: props.page
       })
     })
-    .then((res) => console.log(res.status))
+    .then((res) => {
+      setName('');
+      setPhone('')
+      resetForm()
+      console.log(res.status);
+    })
   }
 
   function handleSubmit(evt) {
@@ -66,6 +71,7 @@ function Request(props) {
                 ${errors.name && 'request__input_type_error'}
               `}
               required
+              value={name}
               onChange={handleChangeName}
             />
             <span
@@ -87,6 +93,7 @@ function Request(props) {
               maxLength='30'
               className={`request__input request__input_value_phone ${errors.phone && 'request__input_type_error'}`}
               required
+              value={phone}
               onChange={handleChangePhone}
             />
             <span

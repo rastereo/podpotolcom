@@ -3,3 +3,16 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+@media screen and (max-width: 768px) {
+  .team__list {
+    justify-content: center;
+    gap: 24px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .team__list {
+    gap: 12px;
+  }
+}

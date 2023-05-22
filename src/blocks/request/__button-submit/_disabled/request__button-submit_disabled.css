@@ -1,4 +1,5 @@
 .request__button-submit_disabled {
+  opacity: .6;
   cursor: default;
 }
 

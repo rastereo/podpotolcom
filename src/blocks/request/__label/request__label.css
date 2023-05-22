@@ -1,16 +1,10 @@
 .request__label {
-  width: 360px;
+  width: 49%;
   display: flex;
   flex-direction: column;
 }
 
-@media screen and (max-width: 855px) {
-  .request__label {
-    width: 344px;
-  }
-}
-
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .request__label {
     width: 100%;
   }

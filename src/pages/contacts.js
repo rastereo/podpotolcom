@@ -12,7 +12,7 @@ function Contacts(props) {
       <TitleBlock title={props.content.title} description={props.content.description} />
       <Contact image={props.content.teamImage} info={props.content.info} />
       <Team title={props.content.teamTitle} team={props.content.team} />
-      <Request />
+      <Request page={props.content.documentTitle} />
     </main>
   );
 }

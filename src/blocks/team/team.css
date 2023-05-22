@@ -1,3 +1,9 @@
 .team {
   padding-top: 132px;
 }
+
+@media screen and (max-width: 768px) {
+  .team {
+    padding-top: 60px;
+  }
+}
