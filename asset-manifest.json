@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/podpotolcom/static/css/main.13b19733.css",
-    "main.js": "/podpotolcom/static/js/main.c386aa8a.js",
+    "main.css": "/podpotolcom/static/css/main.92665462.css",
+    "main.js": "/podpotolcom/static/js/main.56a2b236.js",
     "static/js/787.b8554b09.chunk.js": "/podpotolcom/static/js/787.b8554b09.chunk.js",
     "static/media/Inter-Bold.woff2": "/podpotolcom/static/media/Inter-Bold.ec64ea577b0349e055ad.woff2",
     "static/media/Inter-Medium.woff2": "/podpotolcom/static/media/Inter-Medium.293fd13dbca5a3e450ef.woff2",
@@ -11,6 +11,8 @@
     "static/media/girl.png": "/podpotolcom/static/media/girl.8ea27f07b0e9cdae500e.png",
     "static/media/made-in-moscow-logo-hover.svg": "/podpotolcom/static/media/made-in-moscow-logo-hover.563b56e6f1d147730cb8.svg",
     "static/media/made-in-moscow-logo.svg": "/podpotolcom/static/media/made-in-moscow-logo.2b41c6851c1bc4a1e9b4.svg",
+    "static/media/submit-icon-error.svg": "/podpotolcom/static/media/submit-icon-error.8f0195d1c606d2682252.svg",
+    "static/media/submit-icon-success.svg": "/podpotolcom/static/media/submit-icon-success.b79a9d89e503da1b3b7f.svg",
     "static/media/whatsapp-logo-hover.svg": "/podpotolcom/static/media/whatsapp-logo-hover.092b450cce0c440a2b7e.svg",
     "static/media/whatsapp-logo.svg": "/podpotolcom/static/media/whatsapp-logo.7e17fee6f24f2a68358a.svg",
     "static/media/ok-logo-hover.svg": "/podpotolcom/static/media/ok-logo-hover.048baa5df1e4dcb7dc2b.svg",
@@ -40,12 +42,12 @@
     "static/media/next-arrow-icon-hover.svg": "/podpotolcom/static/media/next-arrow-icon-hover.a39606d73fff512e5952.svg",
     "static/media/prev-arrow-icon.svg": "/podpotolcom/static/media/prev-arrow-icon.2e7f9424521d55efc99a.svg",
     "static/media/next-arrow-icon.svg": "/podpotolcom/static/media/next-arrow-icon.af7b68dc4ba47115ef17.svg",
-    "main.13b19733.css.map": "/podpotolcom/static/css/main.13b19733.css.map",
-    "main.c386aa8a.js.map": "/podpotolcom/static/js/main.c386aa8a.js.map",
+    "main.92665462.css.map": "/podpotolcom/static/css/main.92665462.css.map",
+    "main.56a2b236.js.map": "/podpotolcom/static/js/main.56a2b236.js.map",
     "787.b8554b09.chunk.js.map": "/podpotolcom/static/js/787.b8554b09.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.13b19733.css",
-    "static/js/main.c386aa8a.js"
+    "static/css/main.92665462.css",
+    "static/js/main.56a2b236.js"
   ]
 }
