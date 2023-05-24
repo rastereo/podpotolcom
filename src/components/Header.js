@@ -38,11 +38,16 @@ function Header(props) {
   });
 
   return (
-    <header className={`header ${isOpen && 'header_fix'}`}>
+    <header
+      className={`header ${isOpen && 'header_fix'}`}
+    >
       <NavLink
         to='/'
         className='header__logo link'
-        onClick={() => setOpen(false)}
+        onClick={() => {
+          setOpen(false)
+          hideMain(true)
+        }}
       ></NavLink>
       <Hamburger
         toggled={isOpen}
