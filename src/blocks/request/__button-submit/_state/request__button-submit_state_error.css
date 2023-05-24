@@ -1,0 +1,9 @@
+.request__button-submit_state_error {
+  background-color: #B40000;
+  cursor: default;
+}
+
+.request__button-submit_state_error:hover {
+  background-color: #B40000;
+  cursor: default;
+}

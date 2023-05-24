@@ -12,10 +12,6 @@
   background-image: url(../../../images/logo-podpotolcom-hover.svg);
 }
 
-.header__logo:active {
-  background-image: url(../../../images/logo-podpotolcom.svg);
-}
-
 @media screen and (max-width: 768px) {
   .header__logo {
     width: 53px;

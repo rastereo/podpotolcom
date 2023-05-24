@@ -7,8 +7,12 @@
   border: none;
   color: var(--button-text-color);
   background-color: var(--button-background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
   cursor: pointer;
-  padding: 19px;
+  padding: 19px 0;
   transition: all var(--time-transition);
 }
 
@@ -27,7 +31,7 @@
 @media screen and (max-width: 1160px) {
   .request__button-submit {
     font-size: 20px;
-    padding: 16px;
+    padding: 16px 0;
   }
 }
 

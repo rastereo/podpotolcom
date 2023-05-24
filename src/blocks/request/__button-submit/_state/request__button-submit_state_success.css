@@ -1,0 +1,9 @@
+.request__button-submit_state_success {
+  background-color: #04B400;
+  cursor: default;
+}
+
+.request__button-submit_state_success:hover {
+  background-color: #04B400;
+  cursor: default;
+}

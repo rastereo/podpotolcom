@@ -5,10 +5,22 @@ import { useFormAndValidation } from '../hooks/useFormAndValidation';
 function Request(props) {
   const [name, setName] = useState('')
   const [phone, setPhone] = useState('')
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [isError, setIsError] = useState(false);
+  const [isLoading, setIsLoading] = useState(false)
 
   const { handleChangeValidation, errors, isValid, resetForm } = useFormAndValidation();
 
+  function resetSubmit() {
+    setIsSuccess(false);
+    setIsError(false);
+
+    resetForm();
+  }
+
   function sendMessage(name, phone) {
+    setIsLoading(true);
+
     fetch('https://podpotolkom.transcendent.app/send_notification_tg', {
       method: 'POST',
       headers: {
@@ -21,30 +33,40 @@ function Request(props) {
         page: props.page
       })
     })
-    .then((res) => {
+    .then((result) => {
+      setIsSuccess(true)
+      console.log(result)
+    })
+    .catch((err) => {
+      setIsError(true)
+      console.log(err)
+    })
+    .finally(() => {
       setName('');
-      setPhone('')
-      resetForm()
-      console.log(res.status);
+      setPhone('');
+
+      setIsLoading(false)
+
+      setTimeout(resetSubmit, 5000)
     })
   }
 
   function handleSubmit(evt) {
     evt.preventDefault();
 
-    sendMessage(name, phone)
+    sendMessage(name, phone);
   }
 
   function handleChangeName(evt) {
     setName(evt.target.value);
 
-    handleChangeValidation(evt)
+    handleChangeValidation(evt);
   }
 
   function handleChangePhone(evt) {
-    setPhone(evt.target.value)
+    setPhone(evt.target.value);
 
-    handleChangeValidation(evt)
+    handleChangeValidation(evt);
   }
 
   return (
@@ -97,11 +119,7 @@ function Request(props) {
               onChange={handleChangePhone}
             />
             <span
-              className={`
-                request__error
-                request__error_name_phone
-                ${errors.phone && 'request__error_visible'}
-              `}
+              className={`request__error request__error_name_phone ${errors.phone && 'request__error_visible'}`}
             >
               {errors.phone}
             </span>
@@ -111,9 +129,20 @@ function Request(props) {
             className={`
               request__button-submit
               ${!isValid && 'request__button-submit_disabled'}
+              ${isSuccess && 'request__button-submit_state_success'}
+              ${isError && 'request__button-submit_state_error'}
             `}
-            disabled={!isValid}
-          >Обсудить проект</button>
+            disabled={!isValid || isSuccess || isError}
+          >
+            {
+              (isLoading && 'Отправляю...')
+              ||(isSuccess && 'Отправлено')
+              || (isError && 'Ошибка')
+              || 'Обсудить проект'
+            }
+            {isSuccess && <div className='request__icon request__icon_type_success'></div>}
+            {isError && <div className='request__icon request__icon_type_error'></div>}
+          </button>
         </form>
       </div>
     </section>
