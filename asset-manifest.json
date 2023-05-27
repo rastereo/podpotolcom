@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/podpotolcom/static/css/main.a351b6f2.css",
-    "main.js": "/podpotolcom/static/js/main.b92edb00.js",
+    "main.css": "/podpotolcom/static/css/main.9111209f.css",
+    "main.js": "/podpotolcom/static/js/main.77cc2660.js",
     "static/js/787.b8554b09.chunk.js": "/podpotolcom/static/js/787.b8554b09.chunk.js",
     "static/media/Inter-Bold.woff2": "/podpotolcom/static/media/Inter-Bold.ec64ea577b0349e055ad.woff2",
     "static/media/Inter-Medium.woff2": "/podpotolcom/static/media/Inter-Medium.293fd13dbca5a3e450ef.woff2",
@@ -31,10 +31,14 @@
     "static/media/telegram-logo-hover.svg": "/podpotolcom/static/media/telegram-logo-hover.65f800cf4e62af39df5f.svg",
     "static/media/telegram-logo.svg": "/podpotolcom/static/media/telegram-logo.8291df741520110abe69.svg",
     "static/media/smile.svg": "/podpotolcom/static/media/smile.18aca7fcf868c902029d.svg",
+    "static/media/message-icon.svg": "/podpotolcom/static/media/message-icon.280cc0e5cc615894bf04.svg",
+    "static/media/phone-logo-hover.svg": "/podpotolcom/static/media/phone-logo-hover.6788fc6e70b997eac336.svg",
+    "static/media/phone-logo.svg": "/podpotolcom/static/media/phone-logo.e6baf93788738b72d567.svg",
+    "static/media/close-icon-white.svg": "/podpotolcom/static/media/close-icon-white.1fe9fb2c3a5aed6654db.svg",
     "static/media/clock-3.svg": "/podpotolcom/static/media/clock-3.1a241ecd854caf11fc45.svg",
-    "static/media/close-icon-active.svg": "/podpotolcom/static/media/close-icon-active.871d061e3480bbbbfd4c.svg",
     "static/media/close-icon-hover.svg": "/podpotolcom/static/media/close-icon-hover.a0a67d96ab26e82ea04f.svg",
     "static/media/close-icon.svg": "/podpotolcom/static/media/close-icon.744baeb8da525a676abd.svg",
+    "static/media/close-icon-active.svg": "/podpotolcom/static/media/close-icon-active.e83214b62fe45d4e95a9.svg",
     "static/media/header-triangle.svg": "/podpotolcom/static/media/header-triangle.d3532e99007a78c07140.svg",
     "static/media/prev-arrow-icon-active.svg": "/podpotolcom/static/media/prev-arrow-icon-active.669b665ce075bbd17c67.svg",
     "static/media/prev-arrow-icon-hover.svg": "/podpotolcom/static/media/prev-arrow-icon-hover.87c8f4a644f2cb6cfb62.svg",
@@ -42,12 +46,12 @@
     "static/media/next-arrow-icon-hover.svg": "/podpotolcom/static/media/next-arrow-icon-hover.a39606d73fff512e5952.svg",
     "static/media/prev-arrow-icon.svg": "/podpotolcom/static/media/prev-arrow-icon.2e7f9424521d55efc99a.svg",
     "static/media/next-arrow-icon.svg": "/podpotolcom/static/media/next-arrow-icon.af7b68dc4ba47115ef17.svg",
-    "main.a351b6f2.css.map": "/podpotolcom/static/css/main.a351b6f2.css.map",
-    "main.b92edb00.js.map": "/podpotolcom/static/js/main.b92edb00.js.map",
+    "main.9111209f.css.map": "/podpotolcom/static/css/main.9111209f.css.map",
+    "main.77cc2660.js.map": "/podpotolcom/static/js/main.77cc2660.js.map",
     "787.b8554b09.chunk.js.map": "/podpotolcom/static/js/787.b8554b09.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a351b6f2.css",
-    "static/js/main.b92edb00.js"
+    "static/css/main.9111209f.css",
+    "static/js/main.77cc2660.js"
   ]
 }
