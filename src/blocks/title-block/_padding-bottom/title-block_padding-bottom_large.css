@@ -1,3 +1,16 @@
 .title-block_padding-bottom_large {
   padding-bottom: 132px;
 }
+
+@media screen and (max-width: 768px) {
+  .title-block_padding-bottom_large {
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .title-block_padding-bottom_large {
+    padding-bottom: 36px;
+  }
+}
+

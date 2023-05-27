@@ -1,6 +1,6 @@
 .carousel__button_type_next-arrow {
   background-image: url(../../../../images/next-arrow-icon.svg);
-  right: -80px;
+  right: -5%;
 }
 
 .carousel__button_type_next-arrow:hover {

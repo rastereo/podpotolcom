@@ -50,6 +50,7 @@
 @import url(./blocks/title-block/__grid/title-block__grid.css);
 @import url(./blocks/title-block/__description/title-block__description.css);
 @import url(./blocks/title-block/__description/_position/title-block__description_position_grid.css);
+@import url(./blocks/title-block/__description/_position/title-block__description_position_popup.css);
 @import url(./blocks/title-block/__image/title-block__image.css);
 @import url(./blocks/title-block/__image/_position/title-block__image_position_two-columns.css);
 
@@ -160,14 +161,19 @@
 
 /** Social-links **/
 @import url(./blocks/social-links/social-links.css);
+@import url(./blocks/social-links/social-links/_position/social-link_position_fix.css);
 @import url(./blocks/social-links/_small/social-links_small.css);
 @import url(./blocks/social-links/__logo/social-links__logo.css);
+@import url(./blocks/social-links/__logo/_type/social-links__logo_type_fixed.css);
 
 /** Popup **/
 @import url(./blocks/popup/popup.css);
 @import url(./blocks/popup/_opened/popup_opened.css);
 @import url(./blocks/popup/__container/popup__container.css);
 @import url(./blocks/popup/__close-button/popup__close-button.css);
+
+/** Confetti **/
+@import url(./blocks/confetti/_fix/confetti_fix.css);
 
 /** Carousel **/
 @import url(./blocks/carousel/carousel.css);
@@ -182,3 +188,12 @@
 @import url(./blocks/carousel/__preview/carousel__preview.css);
 @import url(./blocks/carousel/__preview/_active/carousel__preview_active.css);
 @import url(./blocks/carousel/__preview-image/carousel__preview-image.css);
+
+/** Contact-menu **/
+@import url(./blocks/contact-menu/contact-menu.css);
+@import url(./blocks/contact-menu/__button/contact-menu__button.css);
+@import url(./blocks/contact-menu/__button/_active/contact-menu__button_active.css);
+@import url(./blocks/contact-menu/__container/contact-menu__container.css);
+@import url(./blocks/contact-menu/__container/_open/contact-menu__container_open.css);
+@import url(./blocks/contact-menu/__container/_hide/contact-menu__container_hide.css);
+@import url(./blocks/contact-menu/__title/contact-menu__title.css);

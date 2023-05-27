@@ -1,6 +1,6 @@
 .carousel__button_type_prev-arrow {
   background-image: url(../../../../images/prev-arrow-icon.svg);
-  left: -80px;
+  left: -5%;
 }
 
 .carousel__button_type_prev-arrow:hover {

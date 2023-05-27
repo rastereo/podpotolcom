@@ -3,5 +3,11 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  gap: 22.1px;
+  gap: 24px;
+}
+
+@media screen and (max-width: 450px) {
+  .assortment__container_display_flex {
+    gap: 12px;
+  }
 }

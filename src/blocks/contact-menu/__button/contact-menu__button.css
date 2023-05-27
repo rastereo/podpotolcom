@@ -1,0 +1,29 @@
+.contact-menu__button {
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-color: inherit;
+  background-color: var(--text-color);
+  background-image: url(../../../images/message-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all linear .3s;
+}
+
+.contact-menu__button:hover {
+  background-color: var(--button-background-color);
+}
+
+.contact-menu__button:active {
+  background-color: var(--text-color);
+}
+
+@media screen and (max-width: 768px) {
+  .contact-menu__button {
+    width: 60px;
+    height: 60px;
+    background-size: 28px 27px;
+  }
+}

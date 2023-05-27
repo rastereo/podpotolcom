@@ -28,6 +28,14 @@
   background-image: url(../../../images/social/dzen-logo.svg);
 }
 
+.social-links__logo_name_phone {
+  background-image: url(../../../images/social/phone-logo.svg);
+}
+
+.social-links__logo_name_phone:hover {
+  background-image: url(../../../images/social/phone-logo-hover.svg);
+}
+
 .social-links__logo_name_vk:hover {
   background-image: url(../../../images/social/vk-logo-hover.svg);
 }

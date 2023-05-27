@@ -1,0 +1,17 @@
+.contact-menu__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--contact-menu-color);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-menu__title {
+    font-size: 16px;
+    padding-bottom: 16px;
+  }
+}

@@ -1,5 +1,6 @@
 .popup__container {
-  width: 85vw;
+  box-sizing: border-box;
+  width: 90vw;
   height: 100vh;
   display: flex;
   flex-direction: column;

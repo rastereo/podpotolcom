@@ -5,3 +5,28 @@
   grid-row-start: 1;
   grid-row-end: 2;
 }
+
+@media screen and (max-width: 1230px) {
+  .title-block__description_position_grid {
+    font-size: 2.08vw;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title-block__description_position_grid {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .title-block_padding-bottom_large {
+    padding-bottom: 36px;
+  }
+}

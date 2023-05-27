@@ -18,5 +18,5 @@ export function useFormAndValidation() {
     setIsValid(newIsValid);
   }, [setValues, setErrors, setIsValid]);
 
-  return { handleChangeValidation, errors, isValid, resetForm, setIsValid };
+  return { handleChangeValidation, errors, isValid, resetForm, setIsValid, setErrors };
 }

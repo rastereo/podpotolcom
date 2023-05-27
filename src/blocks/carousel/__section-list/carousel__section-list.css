@@ -2,5 +2,4 @@
   height: 100%;
   display: flex;
   transition: 250ms transform ease-in;
-  outline: 2px solid yellowgreen;
 }

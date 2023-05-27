@@ -1,6 +1,6 @@
 .carousel {
-  width: 85%;
-  height: 90%;
+  width: 85vw;
+  height: 85vh;
   position: relative;
   display: flex;
   flex-direction: column;

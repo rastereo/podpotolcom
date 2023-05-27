@@ -1,3 +1,9 @@
 .card_size_small {
-  width: 416px;
+  width: 31%;
+}
+
+@media screen and (max-width: 900px) {
+  .card_size_small {
+    width: 47%;
+  }
 }

@@ -1,0 +1,14 @@
+@keyframes hideMenu {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(150%);
+    opacity: 0;
+  }
+}
+
+.contact-menu__container_hide {
+  animation: hideMenu .3s linear forwards;
+}

@@ -2,6 +2,8 @@ import { useState } from 'react';
 
 import { useFormAndValidation } from '../hooks/useFormAndValidation';
 
+import Confetti from 'react-confetti'
+
 function Request(props) {
   const [name, setName] = useState('')
   const [phone, setPhone] = useState('')
@@ -9,7 +11,7 @@ function Request(props) {
   const [isError, setIsError] = useState(false);
   const [isLoading, setIsLoading] = useState(false)
 
-  const { handleChangeValidation, errors, isValid, resetForm } = useFormAndValidation();
+  const { handleChangeValidation, errors, isValid, resetForm, setErrors } = useFormAndValidation();
 
   function resetSubmit() {
     setIsSuccess(false);
@@ -33,22 +35,31 @@ function Request(props) {
         page: props.page
       })
     })
-    .then((result) => {
-      setIsSuccess(true)
-      console.log(result)
-    })
-    .catch((err) => {
-      setIsError(true)
-      console.log(err)
-    })
-    .finally(() => {
-      setName('');
-      setPhone('');
+      .then((res) => {
+        if (res.ok) {
+          return res.json();
+        }
+      })
+      .then((result) => {
+        if (result.ok) {
+          setIsSuccess(true);
+        } else {
+          setIsError(true);
+          setErrors({ ...errors, phone: result.description });
+          setTimeout(resetSubmit, 5000);
+        }
+      })
+      .catch((err) => {
+        setIsError(true);
 
-      setIsLoading(false)
+        console.log(err);
+      })
+      .finally(() => {
+        setName('');
+        setPhone('');
 
-      setTimeout(resetSubmit, 5000)
-    })
+        setIsLoading(false);
+      })
   }
 
   function handleSubmit(evt) {
@@ -136,7 +147,7 @@ function Request(props) {
           >
             {
               (isLoading && 'Отправляю...')
-              ||(isSuccess && 'Отправлено')
+              || (isSuccess && 'Отправлено')
               || (isError && 'Ошибка')
               || 'Обсудить проект'
             }
@@ -145,6 +156,15 @@ function Request(props) {
           </button>
         </form>
       </div>
+      {isSuccess &&
+        <Confetti
+          className='confetti_fix'
+          width={window.innerWidth}
+          height={window.innerHeight}
+          recycle={false}
+          numberOfPieces={1000}
+        />
+      }
     </section>
   );
 }

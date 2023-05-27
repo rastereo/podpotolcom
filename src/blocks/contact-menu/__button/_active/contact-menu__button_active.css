@@ -1,0 +1,5 @@
+.contact-menu__button_active {
+  border: none;
+  background-image: url(../../../../images/close-icon-white.svg);
+  background-color: var(--button-background-color);
+}

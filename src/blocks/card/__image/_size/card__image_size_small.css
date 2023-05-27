@@ -1,3 +1,9 @@
 .card__image_size_small {
-  height: 535px;
+  height: 529px;
+}
+
+@media screen and (max-width: 1200px) {
+  .card__image_size_small {
+    height: 320px;
+  }
 }

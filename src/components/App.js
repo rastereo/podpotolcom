@@ -6,12 +6,13 @@ import axios from 'axios';
 // import priceData from '../utils/data/priceData.json'
 import contactsData from '../utils/data/contactsData.json'
 // import loftBedAdultData from '../utils/data/loftBedAdultData.json'
-// import tablesData from '../utils/data/tablesData.json'
+import tablesData from '../utils/data/tablesData.json'
 
 import ScrollToTop from '../hooks/ScrollToTop';
 
 import Header from './Header';
 import Footer from './Footer';
+import ContactMenu from './ContactMenu';
 
 import Home from '../pages/Home';
 import Price from '../pages/Price';
@@ -57,9 +58,11 @@ function App() {
       .then((res) => setBunkBedContent(res.data))
       .catch((err) => setError(err.message))
 
-    axios('https://podpotolkom.transcendent.app/tablesData')
-      .then((res) => setTablesContent(res.data))
-      .catch((err) => setError(err.message))
+    // axios('https://podpotolkom.transcendent.app/tablesData')
+    //   .then((res) => setTablesContent(res.data))
+    //   .catch((err) => setError(err.message))
+
+    setTablesContent(tablesData)
 
     axios('https://podpotolkom.transcendent.app/otherData')
       .then((res) => setOtherContent(res.data))
@@ -115,6 +118,7 @@ function App() {
         </Routes>
       </ScrollToTop>
       <Footer />
+      <ContactMenu />
     </>
   );
 }

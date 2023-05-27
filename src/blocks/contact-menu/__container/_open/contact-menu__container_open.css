@@ -1,0 +1,15 @@
+@keyframes showMenu {
+  from {
+    transform: translateX(150%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.contact-menu__container_open {
+  display: block;
+  animation: showMenu .3s linear;
+}

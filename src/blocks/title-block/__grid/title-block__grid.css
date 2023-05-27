@@ -1,6 +1,28 @@
 .title-block__grid {
   display: grid;
   grid-template-columns: 40.2% 23.1% 31.7%;
-  grid-template-rows: 128px 1fr;
+  grid-template-rows: auto 1fr;
   gap: 32px;
+}
+
+@media screen and (max-width: 1230px) {
+  .title-block__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 128px 1fr; */
+    gap: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title-block__grid {
+    /* grid-template-rows: 72px 1fr; */
+    gap: 24px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .title-block__grid {
+    gap: 12px;
+  }
 }

@@ -1,0 +1,9 @@
+.contact-menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  gap: 32px 0;
+  bottom: 1.5%;
+  right: 4.5%;
+}
