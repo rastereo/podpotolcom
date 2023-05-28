@@ -1,15 +1,19 @@
 .contact-menu__container {
   width: 232px;
   box-sizing: border-box;
+  position: absolute;
   border: 1px solid var(--contact-menu-color);
   box-shadow: var(--contact-menu-box-shadow);
   background-color: var(--root-background-color);
   padding: 32px 0px 48px;
+  top: -300%;
+  right: 0;
 }
 
 @media screen and (max-width: 768px) {
   .contact-menu__container {
     width: 186px;
+    top: -400%;
     padding: 32px 0px;
   }
 }

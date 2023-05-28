@@ -6,6 +6,7 @@
   to {
     transform: translateX(150%);
     opacity: 0;
+    display: none;
   }
 }
 
