@@ -1,16 +1,16 @@
-import { useEffect } from "react";
+import { useEffect } from 'react';
 
-function ClosePopupOnKeydown(props) {
+function ClosePopupOnKeydown({ action }) {
   useEffect(() => {
     function handleEscClose(evt) {
-      evt.key === 'Escape' && props.action();
+      if (evt.key === 'Escape') action();
     }
 
     document.addEventListener('keydown', handleEscClose);
 
     return () => {
       document.removeEventListener('keydown', handleEscClose);
-    }
+    };
   });
 }
 

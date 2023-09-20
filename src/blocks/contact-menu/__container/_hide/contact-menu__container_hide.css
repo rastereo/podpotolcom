@@ -1,12 +1,13 @@
 @keyframes hideMenu {
   from {
+    display: block;
     transform: translateX(0);
     opacity: 1;
   }
   to {
+    display: none;
     transform: translateX(150%);
     opacity: 0;
-    display: none;
   }
 }
 

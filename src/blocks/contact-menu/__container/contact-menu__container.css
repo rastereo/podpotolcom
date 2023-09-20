@@ -1,4 +1,5 @@
 .contact-menu__container {
+  display: none;
   width: 232px;
   box-sizing: border-box;
   position: absolute;
