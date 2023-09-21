@@ -1,8 +1,10 @@
 {
   "files": {
-    "main.css": "/podpotolcom/static/css/main.a3526324.css",
-    "main.js": "/podpotolcom/static/js/main.3e30bdd6.js",
+    "main.css": "/podpotolcom/static/css/main.f662c91e.css",
+    "main.js": "/podpotolcom/static/js/main.aec6bb46.js",
     "static/js/787.b8554b09.chunk.js": "/podpotolcom/static/js/787.b8554b09.chunk.js",
+    "static/media/Sasha.jpg": "/podpotolcom/static/media/Sasha.790e9d4d8e04d51fa489.jpg",
+    "static/media/Vorobei.jpg": "/podpotolcom/static/media/Vorobei.8b1f6c9928622f3cd31b.jpg",
     "static/media/Inter-Bold.woff2": "/podpotolcom/static/media/Inter-Bold.ec64ea577b0349e055ad.woff2",
     "static/media/Inter-Medium.woff2": "/podpotolcom/static/media/Inter-Medium.293fd13dbca5a3e450ef.woff2",
     "static/media/Inter-SemiBold.woff2": "/podpotolcom/static/media/Inter-SemiBold.b5f0f109bc88052d4000.woff2",
@@ -46,12 +48,12 @@
     "static/media/next-arrow-icon-hover.svg": "/podpotolcom/static/media/next-arrow-icon-hover.a39606d73fff512e5952.svg",
     "static/media/prev-arrow-icon.svg": "/podpotolcom/static/media/prev-arrow-icon.2e7f9424521d55efc99a.svg",
     "static/media/next-arrow-icon.svg": "/podpotolcom/static/media/next-arrow-icon.af7b68dc4ba47115ef17.svg",
-    "main.a3526324.css.map": "/podpotolcom/static/css/main.a3526324.css.map",
-    "main.3e30bdd6.js.map": "/podpotolcom/static/js/main.3e30bdd6.js.map",
+    "main.f662c91e.css.map": "/podpotolcom/static/css/main.f662c91e.css.map",
+    "main.aec6bb46.js.map": "/podpotolcom/static/js/main.aec6bb46.js.map",
     "787.b8554b09.chunk.js.map": "/podpotolcom/static/js/787.b8554b09.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3526324.css",
-    "static/js/main.3e30bdd6.js"
+    "static/css/main.f662c91e.css",
+    "static/js/main.aec6bb46.js"
   ]
 }
