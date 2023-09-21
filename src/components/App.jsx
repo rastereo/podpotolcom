@@ -1,12 +1,15 @@
 import { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import axios from 'axios';
+// import axios from 'axios';
 
-// import mainData from '../utils/data/mainData.json'
-// import priceData from '../utils/data/priceData.json'
+import mainData from '../utils/data/mainData.json';
+import priceData from '../utils/data/priceData.json';
 import contactsData from '../utils/data/contactsData.json';
-// import loftBedAdultData from '../utils/data/loftBedAdultData.json'
+import loftBedAdultData from '../utils/data/loftBedAdultData.json';
+import loftBedChildrenData from '../utils/data/loftBedChildrenData.json';
 import tablesData from '../utils/data/tablesData.json';
+import bunkBedData from '../utils/data/bunkBedData.json';
+import otherData from '../utils/data/otherData.json';
 
 import ScrollToTop from '../hooks/ScrollToTop';
 
@@ -29,16 +32,21 @@ function App() {
   const [bunkBedContent, setBunkBedContent] = useState(null);
   const [tablesContent, setTablesContent] = useState(null);
   const [otherContent, setOtherContent] = useState(null);
+  // eslint-disable-next-line no-unused-vars
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios('https://podpotolkom.transcendent.app/mainData')
-      .then((res) => setMainContent(res.data))
-      .catch((err) => setError(err.message));
+    // axios('https://podpotolkom.transcendent.app/mainData')
+    //   .then((res) => setMainContent(res.data))
+    //   .catch((err) => setError(err.message));
 
-    axios('https://podpotolkom.transcendent.app/priceData')
-      .then((res) => setPriceContent(res.data))
-      .catch((err) => setError(err.message));
+    setMainContent(mainData);
+
+    // axios('https://podpotolkom.transcendent.app/priceData')
+    //   .then((res) => setPriceContent(res.data))
+    //   .catch((err) => setError(err.message));
+
+    setPriceContent(priceData);
 
     // axios('https://podpotolkom.transcendent.app/contactsData')
     //   .then((res) => setContactsContent(res.data))
@@ -46,17 +54,23 @@ function App() {
 
     setContactsContent(contactsData);
 
-    axios('https://podpotolkom.transcendent.app/loftBedAdultData')
-      .then((res) => setLoftBedAdultContent(res.data))
-      .catch((err) => setError(err.message));
+    // axios('https://podpotolkom.transcendent.app/loftBedAdultData')
+    //   .then((res) => setLoftBedAdultContent(res.data))
+    //   .catch((err) => setError(err.message));
 
-    axios('https://podpotolkom.transcendent.app/loftBedChildrenData')
-      .then((res) => setLoftBedChildrenContent(res.data))
-      .catch((err) => setError(err.message));
+    setLoftBedAdultContent(loftBedAdultData);
 
-    axios('https://podpotolkom.transcendent.app/bunkBedData')
-      .then((res) => setBunkBedContent(res.data))
-      .catch((err) => setError(err.message));
+    // axios('https://podpotolkom.transcendent.app/loftBedChildrenData')
+    //   .then((res) => setLoftBedChildrenContent(res.data))
+    //   .catch((err) => setError(err.message));
+
+    setLoftBedChildrenContent(loftBedChildrenData);
+
+    // axios('https://podpotolkom.transcendent.app/bunkBedData')
+    //   .then((res) => setBunkBedContent(res.data))
+    //   .catch((err) => setError(err.message));
+
+    setBunkBedContent(bunkBedData);
 
     // axios('https://podpotolkom.transcendent.app/tablesData')
     //   .then((res) => setTablesContent(res.data))
@@ -64,9 +78,11 @@ function App() {
 
     setTablesContent(tablesData);
 
-    axios('https://podpotolkom.transcendent.app/otherData')
-      .then((res) => setOtherContent(res.data))
-      .catch((err) => setError(err.message));
+    // axios('https://podpotolkom.transcendent.app/otherData')
+    //   .then((res) => setOtherContent(res.data))
+    //   .catch((err) => setError(err.message));
+
+    setOtherContent(otherData);
   }, []);
 
   return (

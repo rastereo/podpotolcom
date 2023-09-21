@@ -1,17 +1,22 @@
 .contact__photo {
   display: block;
-  max-width: 50%;
+  width: 640px;
+  height: 592px;
   object-fit: cover;
+  object-position: 0px -110px;
 }
 
 @media screen and (max-width: 768px) {
   .contact__photo {
-    max-width: 49%;
+    width: 344px;
+    height: 414px;
+    object-position: 0px -110px;
   }
 }
 
 @media screen and (max-width: 450px) {
   .contact__photo {
-    max-width: 100%;
+    width: 100%;
+    height: 230px;
   }
 }

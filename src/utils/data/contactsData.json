@@ -2,10 +2,10 @@
   "title": "Мы делаем для Вас кровати из дерева",
   "documentTitle": "Контакты",
   "description": "Мы любим, когда нам пишут или звонят 🙂",
-  "teamImage": "http://placehold.it/640x592",
+  "teamImage": "http://lh3.googleusercontent.com/a3wxWMXof4iFM0aebZO8GjLUJGkA6dWMbDJ18gsq5Ey4CXYFbRpqYsp6t0t_Zo914KT-bHfcWdaUzBcega1OTyrKeNb9T5pcA_S0Rtph=s2500-rwa",
   "info": [
     {
-      "title": "Работаем ежедневно",
+      "title": "Работаем с понедельника до субботы",
       "describe": "с 10.00 до 18.00"
     },
     {
@@ -41,18 +41,18 @@
   "teamTitle": "Кто будет работать над вашим проектом:",
   "team": [
     {
-      "name": "Имя",
-      "job": "Должность",
-      "image": "http://placehold.it/416"
+      "name": "Александр Воробьёв",
+      "job": "Ведущий специалист-замер, проект, сборка",
+      "image": "../../image/team/Sasha.jpg"
     },
     {
-      "name": "Имя",
-      "job": "Должность",
-      "image": "http://placehold.it/416"
+      "name": "Александра Воробьёва",
+      "job": "Администратор-ведение вашего проекта от звонка до сборки",
+      "image": "http://lh3.googleusercontent.com/7LW9l6O7iq03FlksPI9417wmVhu5KJ3TisUdfOSOnEN-kJiMZoq6HjIHTTYw8RzkYLBhqTMkyfqr0wy-TnGZ2xnSBukkmxHPU7Krbnx6=s2500-rwa"
     },
     {
-      "name": "Имя",
-      "job": "Должность",
+      "name": "Александр Соловьёв",
+      "job": "Столяр плотник-мастер золотые руки",
       "image": "http://placehold.it/416"
     }
   ]

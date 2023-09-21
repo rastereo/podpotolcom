@@ -1,24 +1,46 @@
 import React from 'react';
 
-function Team({ title, team }) {
+import sasha from '../images/team/Sasha.jpg';
+import vorobei from '../images/team/Vorobei.jpg';
+
+function Team({ title }) {
   return (
     <section className="team">
       <h2 className="title title_size_medium">{title}</h2>
       <ul className="team__list list">
-        {team.map((worker, index) => (
-          // eslint-disable-next-line react/no-array-index-key
-          <li key={index} className="team__card">
-            <img
-              src={worker.image}
-              alt="Фото работника"
-              className="team__photo"
-            />
-            <div className="team__person">
-              <p className="team__name">{worker.name}</p>
-              <p className="team__job">{worker.job}</p>
-            </div>
-          </li>
-        ))}
+        <li className="team__card">
+          <img
+            src={vorobei}
+            alt="Фото работника"
+            className="team__photo"
+          />
+          <div className="team__person">
+            <p className="team__name">Александр Воробьёв</p>
+            <p className="team__job">Ведущий специалист-замер, проект, сборка</p>
+          </div>
+        </li>
+        <li className="team__card">
+          <img
+            src={sasha}
+            alt="Фото работника"
+            className="team__photo"
+          />
+          <div className="team__person">
+            <p className="team__name">Александра Воробьёва</p>
+            <p className="team__job">Администратор-ведение вашего проекта от звонка до сборки</p>
+          </div>
+        </li>
+        <li className="team__card">
+          <img
+            src="http://placehold.it/416"
+            alt="Фото работника"
+            className="team__photo"
+          />
+          <div className="team__person">
+            <p className="team__name">Александр Соловьёв</p>
+            <p className="team__job">Столяр плотник-мастер золотые руки</p>
+          </div>
+        </li>
       </ul>
     </section>
   );

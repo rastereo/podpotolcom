@@ -13,9 +13,7 @@ function Achievement({ title, numbers, feats }) {
               <CountUp
                 end={number.number}
                 enableScrollSpy
-                scrollSpyDelay={-35}
                 duration={15}
-                scrollSpyOnce
               />
               {number.number === '200' && '+'}
             </h3>

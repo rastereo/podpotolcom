@@ -1,5 +1,6 @@
 .team__card {
   width: 32%;
+  /* height: 416px; */
   text-align: center;
   display: flex;
   flex-direction: column;

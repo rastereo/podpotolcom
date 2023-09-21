@@ -7,7 +7,7 @@
   --button-background-color: #0007b4;
   --button-background-color-hover: #000581;
   --button-background-color-active: #000;
-  --card-box-shadow-hover: 0px 4px 5px rgba(55, 60, 175, 0.45), 0px 1px 10px rgba(55, 60, 175, 0.12), 0px 2px 4px rgba(55, 60, 175, 0.2);
+  --card-box-shadow-hover: 0px 2px 4px 0px rgba(55, 60, 175, 0.20), 0px 1px 10px 0px rgba(55, 60, 175, 0.12), 0px 4px 5px 0px rgba(55, 60, 175, 0.45);
   --card-box-shadow-filter:
     drop-shadow(0px 4px 5px rgba(55, 60, 175, 0.45))
     drop-shadow(0px 1px 10px rgba(55, 60, 175, 0.12))

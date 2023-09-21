@@ -34,6 +34,7 @@ function Product({ content }) {
   function handleClickCard(data) {
     setPopupContent(data);
 
+    // eslint-disable-next-line no-console
     console.log(data);
   }
 
@@ -50,7 +51,7 @@ function Product({ content }) {
         description={description}
         images={mainImages}
       />
-      <PriceCards prices={prices} />
+      {prices && <PriceCards prices={prices} />}
       <Assortment
         isFlex
         beds={beds}
